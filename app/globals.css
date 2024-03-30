@@ -4,8 +4,10 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: 26, 26, 26;
+  --background-end-rgb: 26, 26, 26;
+  /* --primary-color: rgb(255, 59, 0); */
+  --primary-color: rgb(236, 78, 32);
 }
 
 * {
@@ -32,14 +34,94 @@ footer {
 
 section {
   padding: 50px 25px;
-  min-height: calc(100vh - 60px);
-  border: 1px solid white;
+  min-height: calc(100vh);
+  /* border: 1px solid white; */
+}
+
+/* Home Page Start */
+
+section#home-hero {
+  padding: 50px 25px;
+  min-height: calc(100vh - 120px);
+  /* border: 1px solid white; */
+  display: grid;
+  grid-template-rows: 25% auto 10%;
+
+  /* #hero-title {
+    h1 {
+      color: var(--primary-color);
+    }
+  } */
+}
+
+/* Home Page 'Let's Connect' Button Style - Start */
+#svg-btn:hover #border {
+  stroke-dasharray: 880;
+  stroke-dashoffset: 0;
+  cursor: pointer;
+  fill: url("#border-gradient");
+  -webkit-animation: none;
+  animation: none;
+}
+#svg-btn:hover #text {
+  fill: #0b132b;
+}
+#svg-btn #border {
+  fill: transparent;
+  stroke: url("#border-gradient");
+  stroke-width: 2;
+  stroke-dasharray: 250;
+  stroke-dashoffset: 500;
+  -webkit-animation: animateBorder 2s ease-in-out infinite forwards;
+  animation: animateBorder 2s ease-in-out infinite forwards;
+}
+
+@-webkit-keyframes animateBorder {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes animateBorder {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+/* Home Page 'Let's Connect' Button Style - End */
+
+/* Home Page End */
+
+/* Media Queries Start */
+
+@media only screen and (min-width: 999.9px) {
+  /* Home Page - Hero Section Start */
+  section#home-hero {
+    min-height: calc(100vh - 60px);
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(5, 20%);
+
+    #hero-title {
+      grid-row: 1/4;
+      align-self: center;
+    }
+
+    #hero-video {
+      grid-row: 1/6;
+    }
+
+    #hero-connect-btn {
+      grid-row: 4/6;
+      align-self: center;
+    }
+  }
+  /* Home Page - Hero Section Ens */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 26, 26, 26;
+    --background-end-rgb: 26, 26, 26;
   }
 }
+
+/* Media Queries End */
