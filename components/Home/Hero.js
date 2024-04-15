@@ -54,13 +54,6 @@ export default function Hero() {
             stroke-width="2"
           />
         </svg>
-        <h1
-          className={
-            hikou_outline.className + " text-7xl md:text-9xl lg:text-[200px]"
-          }
-        >
-          SN SAKIB
-        </h1>
         <h2 className="text-lg md:text-2xl lg:text-5xl mt-3 lg:mt-5">
           Web & Blockchain Developer
         </h2>
