@@ -29,24 +29,23 @@ body {
 /* Animated Gradient - Start */
 .animated-gradient {
   background-color: #a7ff99;
-  background: radial-gradient(
-      at 72% 52%,
-      hsla(284, 83%, 79%, 1) 0px,
-      transparent 50%
-    ),
-    radial-gradient(at 26% 36%, hsla(162, 69%, 62%, 1) 0px, transparent 50%),
-    radial-gradient(at 84% 66%, hsla(251, 89%, 64%, 1) 0px, transparent 50%),
-    radial-gradient(at 39% 8%, hsla(163, 64%, 70%, 1) 0px, transparent 50%),
-    radial-gradient(at 31% 64%, hsla(207, 95%, 70%, 1) 0px, transparent 50%),
-    radial-gradient(at 11% 53%, hsla(341, 81%, 63%, 1) 0px, transparent 50%),
-    radial-gradient(at 79% 62%, hsla(292, 84%, 79%, 1) 0px, transparent 50%);
+  background: linear-gradient(
+    132deg,
+    #ffcaf0,
+    #78e1fb,
+    #7a9def,
+    #9d82ea,
+    #a16ce9,
+    #c580ef,
+    #78e1fb
+  );
 
   background-size: 1400% 1400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-animation: AnimateGradient 10s ease infinite;
-  -moz-animation: AnimateGradient 10s ease infinite;
-  animation: AnimateGradient 10s ease infinite;
+  -webkit-animation: AnimateGradient 15s ease infinite;
+  -moz-animation: AnimateGradient 15s ease infinite;
+  animation: AnimateGradient 15s ease infinite;
 }
 
 @-webkit-keyframes AnimateGradient {
