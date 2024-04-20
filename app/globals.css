@@ -26,59 +26,57 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+/* Home Page Contact Links - Start */
+.contact-link {
+  height: 2.8rem;
+  width: 2.8rem;
+}
+
+.contact-link:focus {
+  outline: none;
+}
+
+.contact-link:hover {
+  transform: scale(1.2);
+}
+
+.contact-link svg {
+  pointer-events: none;
+  margin: 5px;
+}
+
+@media screen and (min-width: 1080px) {
+  .contact-link {
+    height: 3.2rem;
+    width: 3.2rem;
+  }
+}
+/* Home Page Contact Links - End */
+
 /* Animated Gradient - Start */
 .animated-gradient {
-  background-color: #a7ff99;
-  background: linear-gradient(
-    132deg,
-    #ffcaf0,
-    #78e1fb,
-    #7a9def,
-    #9d82ea,
-    #a16ce9,
-    #c580ef,
-    #78e1fb
-  );
-
-  background-size: 1400% 1400%;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-animation: AnimateGradient 15s ease infinite;
-  -moz-animation: AnimateGradient 15s ease infinite;
   animation: AnimateGradient 15s ease infinite;
 }
 
-@-webkit-keyframes AnimateGradient {
-  0% {
-    background-position: 0% 2%;
-  }
-  50% {
-    background-position: 100% 99%;
-  }
-  100% {
-    background-position: 0% 2%;
-  }
-}
-@-moz-keyframes AnimateGradient {
-  0% {
-    background-position: 0% 2%;
-  }
-  50% {
-    background-position: 100% 99%;
-  }
-  100% {
-    background-position: 0% 2%;
-  }
-}
 @keyframes AnimateGradient {
   0% {
-    background-position: 0% 2%;
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 50% 50%;
   }
   50% {
-    background-position: 100% 99%;
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 50% 50%;
   }
   100% {
-    background-position: 0% 2%;
+    background-position: 0% 0%;
   }
 }
 /* Animated Gradient - End */
