@@ -33,7 +33,6 @@ footer {
 section {
   padding: 50px 25px;
   min-height: calc(100vh);
-  /* border: 1px solid white; */
 }
 
 /* Home Page Start */
@@ -41,50 +40,9 @@ section {
 section#home-hero {
   padding: 50px 25px;
   min-height: calc(100vh - 120px);
-  /* border: 1px solid white; */
   display: grid;
   grid-template-rows: 25% auto 10%;
-
-  /* #hero-title {
-    h1 {
-      color: var(--primary-color);
-    }
-  } */
 }
-
-/* Home Page 'Let's Connect' Button Style - Start */
-/* #svg-btn:hover #border {
-  stroke-dasharray: 880;
-  stroke-dashoffset: 0;
-  cursor: pointer;
-  fill: url("#border-gradient");
-  -webkit-animation: none;
-  animation: none;
-}
-#svg-btn:hover #text {
-  fill: #0b132b;
-}
-#svg-btn #border {
-  fill: transparent;
-  stroke: url("#border-gradient");
-  stroke-width: 2;
-  stroke-dasharray: 250;
-  stroke-dashoffset: 500;
-  -webkit-animation: animateBorder 2s ease-in-out infinite forwards;
-  animation: animateBorder 2s ease-in-out infinite forwards;
-}
-
-@-webkit-keyframes animateBorder {
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
-@keyframes animateBorder {
-  100% {
-    stroke-dashoffset: 0;
-  }
-} */
-/* Home Page 'Let's Connect' Button Style - End */
 
 /* Home Page Contact Links - Start */
 .contact-link {
