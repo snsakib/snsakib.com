@@ -1,6 +1,6 @@
 import { incompleeta } from "@/app/fonts-loader";
 
-export default function HomeHero() {
+export default function Hero() {
   return (
     <section id="home-hero">
       <div
