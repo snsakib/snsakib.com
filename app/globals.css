@@ -109,20 +109,20 @@ section#home-hero {
     min-height: calc(100vh - 60px);
     grid-template-columns: 50% 50%;
     grid-template-rows: repeat(5, 20%);
+  }
 
-    #hero-title {
-      grid-row: 1/4;
-      align-self: center;
-    }
+  section#home-hero #hero-title {
+    grid-row: 1/4;
+    align-self: center;
+  }
 
-    #hero-video {
-      grid-row: 1/6;
-    }
+  section#home-hero #hero-video {
+    grid-row: 1/6;
+  }
 
-    #hero-connect-btn {
-      grid-row: 4/6;
-      align-self: center;
-    }
+  section#home-hero #hero-connect-btn {
+    grid-row: 4/6;
+    align-self: center;
   }
   /* Home Page - Hero Section Ens */
 }
