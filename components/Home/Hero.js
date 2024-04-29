@@ -23,11 +23,12 @@ export default function HomeHero() {
         className="flex flex-col justify-center items-center overflow-hidden rounded-xl"
         id="hero-video"
       >
-        <video controls poster="/assets/img/home-hero-video-poster.jpg">
-          {/* <source src="path-to-your-video.webm" type="video/webm" /> */}
+        {/* <video controls poster="/assets/img/home-hero-video-poster.jpg">
+          <source src="path-to-your-video.webm" type="video/webm" />
           <source src="/assets/videos/demo-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
-        </video>
+        </video> */}
+        <img src="/assets/img/home-hero-illustration.svg" />
       </div>
       <div
         id="contact-links"
@@ -36,7 +37,7 @@ export default function HomeHero() {
         {/* Email Link */}
         <a
           href="mailto:hello@snsakib.com"
-          target="_blanck"
+          target="_blank"
           rel="noopener"
           className="contact-link"
         >
