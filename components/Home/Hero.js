@@ -37,7 +37,7 @@ export default function HomeHero() {
         {/* Email Link */}
         <a
           href="mailto:hello@snsakib.com"
-          target="_blanck"
+          target="_blank"
           rel="noopener"
           className="contact-link"
         >
