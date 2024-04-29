@@ -37,9 +37,9 @@ export default function HomeHero() {
         {/* Email Link */}
         <a
           href="mailto:hello@snsakib.com"
-          target="_blank"
           rel="noopener"
           className="contact-link"
+          title="hello@snsakib.com"
         >
           {/* Email Icon */}
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
@@ -57,6 +57,7 @@ export default function HomeHero() {
           target="_blank"
           rel="noopener"
           className="contact-link"
+          title="s-n-sakib"
         >
           {/* LinkedIn Icon */}
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
@@ -74,6 +75,7 @@ export default function HomeHero() {
           target="_blank"
           rel="noopener"
           className="contact-link"
+          title="@syed_n_sakib"
         >
           {/* Twitter Icon */}
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
@@ -91,6 +93,7 @@ export default function HomeHero() {
           target="_blank"
           rel="noopener"
           className="contact-link"
+          title="@snsakib"
         >
           {/* GitHub Icon */}
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
