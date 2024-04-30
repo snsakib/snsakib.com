@@ -114,11 +114,11 @@ section#home-hero {
     grid-row: 1/6;
   }
 
-  section#home-hero #hero-connect-btn {
+  section#home-hero #contact-links {
     grid-row: 4/6;
     align-self: center;
   }
-  /* Home Page - Hero Section Ens */
+  /* Home Page - Hero Section End */
 }
 
 @media (prefers-color-scheme: dark) {

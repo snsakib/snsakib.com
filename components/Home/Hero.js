@@ -32,7 +32,7 @@ export default function HomeHero() {
       </div>
       <div
         id="contact-links"
-        className="flex justify-around items-center w-full md:w-6/12 mx-auto"
+        className="flex justify-around items-center w-full mx-auto mt-10 md:w-6/12"
       >
         {/* Email Link */}
         <a
