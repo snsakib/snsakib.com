@@ -2,7 +2,7 @@ import { incompleeta } from "@/app/fonts-loader";
 
 export default function HomeHero() {
   return (
-    <section id="home-hero">
+    <section id="home-hero" className="bg-black page-section">
       <div
         className="flex flex-col justify-evenly items-center"
         id="hero-title"
@@ -15,7 +15,7 @@ export default function HomeHero() {
         >
           SN SAKIB
         </h1>
-        <h2 className="text-xl md:text-3xl xl:text-4xl font-bold mt-5 xl:mt-10">
+        <h2 className="text-white text-xl md:text-3xl xl:text-4xl font-bold mt-5 xl:mt-10">
           Web & Blockchain Developer
         </h2>
       </div>

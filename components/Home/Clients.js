@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function HomeClients() {
   return (
-    <div className="flex justify-between items-center flex-col md:flex-row px-6 py-5 md:px-28 md:py-10 bg-white">
+    <section className="flex justify-between items-center flex-col md:flex-row page-section bg-white">
       <div className="w-full md:w-1/2 md:pt-10 self-start text-black">
         <h2 className="text-3xl md:text-5xl md:leading-tight mb-3 md:mb-7 font-bold text-gradient text-center md:text-left">
           My Top Clients
@@ -88,6 +88,6 @@ export default function HomeClients() {
           />
         </a>
       </div>
-    </div>
+    </section>
   );
 }

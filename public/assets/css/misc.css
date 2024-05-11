@@ -1,0 +1,41 @@
+/* Text Gradient - Start */
+.text-gradient {
+  background: hsla(340, 80%, 69%, 1);
+  background: linear-gradient(
+    135deg,
+    hsla(340, 80%, 69%, 1) 0%,
+    hsla(15, 93%, 71%, 1) 100%
+  );
+  background-size: 50% 50%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* Text Gradient - End */
+
+/* Animated Gradient - Start */
+.animated-gradient {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: AnimateGradient 5s ease-in-out infinite;
+}
+
+@keyframes AnimateGradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+/* Animated Gradient - End */
