@@ -1,3 +1,17 @@
+.hero-wrapper {
+  position: relative;
+  background-color: #181819;
+}
+
+.page-divider {
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  background-image: url("../../img/waves.svg");
+}
+
 #home-hero {
   /* min-height: calc(100vh - 60px); */
   display: grid;
@@ -33,22 +47,22 @@
 
 @media only screen and (min-width: 999.9px) {
   /* Home Page - Hero Section Start */
-  section#home-hero {
+  #home-hero {
     /* min-height: calc(100vh); */
     grid-template-columns: 50% 50%;
     grid-template-rows: repeat(5, 20%);
   }
 
-  section#home-hero #hero-title {
+  #home-hero #hero-title {
     grid-row: 1/4;
     align-self: center;
   }
 
-  section#home-hero #hero-video {
+  #home-hero #hero-video {
     grid-row: 1/6;
   }
 
-  section#home-hero #contact-links {
+  #home-hero #contact-links {
     grid-row: 4/6;
     align-self: center;
   }
