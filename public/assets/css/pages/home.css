@@ -1,5 +1,5 @@
 #home-hero {
-  /* min-height: calc(100vh - 120px); */
+  /* min-height: calc(100vh - 60px); */
   display: grid;
   grid-template-rows: 25% auto 10%;
 }
@@ -34,7 +34,7 @@
 @media only screen and (min-width: 999.9px) {
   /* Home Page - Hero Section Start */
   section#home-hero {
-    /* min-height: calc(100vh - 60px); */
+    /* min-height: calc(100vh); */
     grid-template-columns: 50% 50%;
     grid-template-rows: repeat(5, 20%);
   }

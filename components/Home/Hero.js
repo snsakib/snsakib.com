@@ -2,7 +2,7 @@ import { incompleeta } from "@/app/fonts-loader";
 
 export default function HomeHero() {
   return (
-    <section id="home-hero" className="bg-black min-h-screen page-section">
+    <section id="home-hero" className="bg-black min-h-dvh page-section">
       <div
         className="flex flex-col justify-evenly items-center"
         id="hero-title"
