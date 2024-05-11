@@ -2,144 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-color: #090b10;
-}
+/* Base CSS */
+@import url("../public/assets/css/root.css");
 
-* {
-  box-sizing: border-box;
-}
+/* Layout CSS */
+@import url("../public/assets/css/layout/header.css");
+@import url("../public/assets/css/layout/footer.css");
+@import url("../public/assets/css/layout/page.css");
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background-color: var(--background-color);
-}
+/* Pages CSS */
+@import url("../public/assets/css/pages/home.css");
 
-header {
-  min-height: 60px;
-}
-
-footer {
-  min-height: 60px;
-}
-
-section {
-  padding: 50px 25px;
-  min-height: calc(100vh);
-}
-
-.text-gradient {
-  background: hsla(340, 80%, 69%, 1);
-  background: linear-gradient(
-    135deg,
-    hsla(340, 80%, 69%, 1) 0%,
-    hsla(15, 93%, 71%, 1) 100%
-  );
-  background-size: 50% 50%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* Home Page Start */
-
-section#home-hero {
-  padding: 50px 25px;
-  min-height: calc(100vh - 120px);
-  display: grid;
-  grid-template-rows: 25% auto 10%;
-}
-
-/* Home Page Contact Links - Start */
-.contact-link {
-  height: 2.8rem;
-  width: 2.8rem;
-}
-
-.contact-link:focus {
-  outline: none;
-}
-
-.contact-link:hover {
-  transform: scale(1.2);
-}
-
-.contact-link svg {
-  pointer-events: none;
-  margin: 5px;
-}
-
-@media screen and (min-width: 1080px) {
-  .contact-link {
-    height: 3.2rem;
-    width: 3.2rem;
-  }
-}
-/* Home Page Contact Links - End */
-
-/* Home Page End */
-
-/* Animated Gradient - Start */
-
-.animated-gradient {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: AnimateGradient 5s ease-in-out infinite;
-}
-
-@keyframes AnimateGradient {
-  0% {
-    background-position: 0% 0%;
-  }
-  25% {
-    background-position: 50% 50%;
-  }
-  50% {
-    background-position: 100% 100%;
-  }
-  75% {
-    background-position: 50% 50%;
-  }
-  100% {
-    background-position: 0% 0%;
-  }
-}
-/* Animated Gradient - End */
-
-/* Media Queries Start */
-
-@media only screen and (min-width: 999.9px) {
-  /* Home Page - Hero Section Start */
-  section#home-hero {
-    min-height: calc(100vh - 60px);
-    grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(5, 20%);
-  }
-
-  section#home-hero #hero-title {
-    grid-row: 1/4;
-    align-self: center;
-  }
-
-  section#home-hero #hero-video {
-    grid-row: 1/6;
-  }
-
-  section#home-hero #contact-links {
-    grid-row: 4/6;
-    align-self: center;
-  }
-  /* Home Page - Hero Section End */
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 26, 26, 26;
-    --background-end-rgb: 26, 26, 26;
-  }
-}
-
-/* Media Queries End */
+/* Misc CSS */
+@import url("../public/assets/css/misc.css");
