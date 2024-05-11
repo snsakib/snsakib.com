@@ -29,6 +29,18 @@ section {
   min-height: calc(100vh);
 }
 
+.text-gradient {
+  background: hsla(340, 80%, 69%, 1);
+  background: linear-gradient(
+    135deg,
+    hsla(340, 80%, 69%, 1) 0%,
+    hsla(15, 93%, 71%, 1) 100%
+  );
+  background-size: 50% 50%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* Home Page Start */
 
 section#home-hero {
@@ -68,12 +80,13 @@ section#home-hero {
 /* Home Page End */
 
 /* Animated Gradient - Start */
+
 .animated-gradient {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: AnimateGradient 15s ease infinite;
+  animation: AnimateGradient 5s ease-in-out infinite;
 }
 
 @keyframes AnimateGradient {
