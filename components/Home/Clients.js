@@ -4,7 +4,7 @@ export default function HomeClients() {
   return (
     <section className="flex justify-between items-center flex-col lg:flex-row page-section pt-28 pb-20 md:pt-32">
       <div className="w-full lg:w-1/2 md:pt-10 self-start text-black">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl md:leading-tight mb-3 md:mb-7 font-bold text-gradient text-center lg:text-left">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl lg:leading-normal mb-3 md:mb-7 font-bold text-gradient text-center lg:text-left">
           My Top Clients
         </h2>
         <p className="text-md md:text-2xl mb-10 lg:pr-20 xl:pr-24 2xl:pr-32 text-justify">
