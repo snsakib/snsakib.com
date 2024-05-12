@@ -1,0 +1,15 @@
+#home-clients {
+  position: relative;
+}
+
+/* Page Divider - Start */
+
+.home-clients-section-divider {
+  position: absolute;
+  background-image: url("../../../img/home-clients-section-divider.svg");
+  height: 100px;
+  width: 100%;
+  bottom: -99px;
+}
+
+/* Page Divider - End */

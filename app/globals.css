@@ -11,7 +11,7 @@
 @import url("../public/assets/css/layout/page.css");
 
 /* Pages CSS */
-@import url("../public/assets/css/pages/home.css");
+@import url("../public/assets/css/pages/home/home.css");
 
 /* Misc CSS */
 @import url("../public/assets/css/misc.css");
