@@ -13,5 +13,6 @@
 /* Pages CSS */
 @import url("../public/assets/css/pages/home/home.css");
 
-/* Misc CSS */
-@import url("../public/assets/css/misc.css");
+/* UI CSS */
+@import url("../public/assets/css/ui/carousel.css");
+@import url("../public/assets/css/ui/misc.css");

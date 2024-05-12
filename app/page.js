@@ -1,6 +1,6 @@
-import Hero from "@/components/Home/Hero";
-import HomeClients from "@/components/Home/Clients";
-import HomeProjects from "@/components/Home/Projects";
+import Hero from "@/components/pages/home/hero";
+import HomeClients from "@/components/pages/home/clients";
+import HomeProjects from "@/components/pages/home/projects";
 
 export default function Home() {
   return (
