@@ -1,15 +1,6 @@
 .hero-wrapper {
-  position: relative;
   background-color: #181819;
-}
-
-.page-divider {
-  height: 100px;
-  width: 100%;
-  position: absolute;
-  bottom: -100px;
-  left: 0;
-  background-image: url("../../img/waves.svg");
+  position: relative;
 }
 
 #home-hero {
@@ -68,3 +59,15 @@
   }
   /* Home Page - Hero Section End */
 }
+
+/* Page Divider - Start */
+
+.page-divider {
+  position: absolute;
+  background-image: url("../../img/waves.svg");
+  height: 100px;
+  width: 100%;
+  bottom: -99px;
+}
+
+/* Page Divider - End */

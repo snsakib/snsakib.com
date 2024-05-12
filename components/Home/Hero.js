@@ -3,7 +3,7 @@ import { incompleeta } from "@/app/fonts-loader";
 export default function HomeHero() {
   return (
     <section className="hero-wrapper">
-      <div id="home-hero" className="min-h-dvh py-20">
+      <div id="home-hero" className="min-h-dvh pt-5 pb-20">
         <div
           className="flex flex-col justify-evenly items-center"
           id="hero-title"
