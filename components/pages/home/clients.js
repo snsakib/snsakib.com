@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function HomeClients() {
   return (
-    <section id="home-clients">
+    <section id="home-clients" className="bg-white">
       <div className="flex justify-between items-center flex-col lg:flex-row page-section pt-28 pb-20 md:pt-32">
         <div className="w-full lg:w-1/2 md:pt-10 self-start text-black">
           <h2 className="section-heading mb-3 md:mb-7 text-gradient-1 text-center lg:text-left">
@@ -25,7 +25,7 @@ export default function HomeClients() {
             title="The World Bank"
           >
             <Image
-              src="/assets/img/world-bank-logo.png"
+              src="/assets/img/original-logos/world-bank-logo.svg"
               width={200}
               height={200}
               alt="World Bank logo"
@@ -58,12 +58,16 @@ export default function HomeClients() {
             />
           </a>
 
-          <a href="https://educative.io" target="_blank" title="Educative.io">
+          <a
+            href="https://col.org"
+            target="_blank"
+            title="Commonwealth of Learning"
+          >
             <Image
-              src="/assets/img/educative-logo.png"
+              src="/assets/img/original-logos/col-logo.webp"
               width={200}
               height={200}
-              alt="Eduvative.io logo"
+              alt="Commonwealth of Learning logo"
             />
           </a>
 
