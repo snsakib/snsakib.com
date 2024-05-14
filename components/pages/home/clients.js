@@ -18,12 +18,12 @@ export default function HomeClients() {
             develop my skills.
           </p>
         </div>
-        <div className="client-logos w-full lg:w-1/2 grid grid-cols-12 justify-items-center items-center gap-y-6">
+        <div className="client-logos w-full lg:w-1/2 grid grid-cols-4 justify-items-center items-center gap-5 md:gap-x-20 md:gap-y-10 lg:gap-x-5 lg:gap-y-10 xl:gap-10">
           <a
             href="https://www.worldbank.org/"
             target="_blank"
             title="The World Bank"
-            className="col-start-2 col-span-10"
+            className="col-span-2"
           >
             <Image
               src="/assets/img/world-bank-logo.svg"
@@ -36,7 +36,7 @@ export default function HomeClients() {
             href="https://col.org"
             target="_blank"
             title="Commonwealth of Learning"
-            className="row-start-2 col-start-2 col-span-10"
+            className="col-span-2"
           >
             <Image
               src="/assets/img/col-logo.png"
@@ -49,7 +49,6 @@ export default function HomeClients() {
             href="https://www.robi.com.bd/"
             target="_blank"
             title="Robi Axiata Limited"
-            className="row-start-3 col-start-2 col-span-4"
           >
             <Image src="/assets/img/robi-logo.svg" alt="Robi logo" fill />
           </a>
@@ -58,31 +57,28 @@ export default function HomeClients() {
             href="https://polarbd.com/"
             target="_blank"
             title="Polar Ice Cream"
-            className="row-start-3 col-start-7 col-span-5"
           >
             <Image src="/assets/img/polar-logo.png" alt="Polar logo" fill />
-          </a>
-
-          <a
-            href="http://wsmesuppliersplatform.smef.gov.bd/"
-            target="_blank"
-            title="Small & Medium Enterprise Foundation"
-            className="row-start-4 col-start-2 col-span-4"
-          >
-            <Image src="/assets/img/smef-logo.jpg" alt="SMEF logo" fill />
           </a>
 
           <a
             href="https://www.police.gov.bd/"
             target="_blank"
             title="Bangladesh Police"
-            className="row-start-4 col-start-7 col-span-5"
           >
             <Image
               src="/assets/img/bd-police-logo.svg"
               alt="BD Police logo"
               fill
             />
+          </a>
+
+          <a
+            href="http://wsmesuppliersplatform.smef.gov.bd/"
+            target="_blank"
+            title="Small & Medium Enterprise Foundation"
+          >
+            <Image src="/assets/img/smef-logo.jpg" alt="SMEF logo" fill />
           </a>
         </div>
       </div>
