@@ -18,15 +18,15 @@ export default function HomeClients() {
             develop my skills.
           </p>
         </div>
-        <div className="client-logos w-full lg:w-1/2 grid grid-cols-4 justify-items-center items-center gap-5">
+        <div className="client-logos w-full lg:w-1/2 grid grid-cols-12 justify-items-center items-center gap-y-6">
           <a
             href="https://www.worldbank.org/"
             target="_blank"
             title="The World Bank"
-            className="col-span-4 md:col-span-2"
+            className="col-start-2 col-span-10"
           >
             <Image
-              src="/assets/img/original-logos/world-bank-logo.svg"
+              src="/assets/img/world-bank-logo.svg"
               alt="World Bank logo"
               fill
             />
@@ -36,10 +36,10 @@ export default function HomeClients() {
             href="https://col.org"
             target="_blank"
             title="Commonwealth of Learning"
-            className="col-span-4 md:col-span-2"
+            className="row-start-2 col-start-2 col-span-10"
           >
             <Image
-              src="/assets/img/original-logos/col-logo.webp"
+              src="/assets/img/col-logo.png"
               alt="Commonwealth of Learning logo"
               fill
             />
@@ -49,7 +49,7 @@ export default function HomeClients() {
             href="https://www.robi.com.bd/"
             target="_blank"
             title="Robi Axiata Limited"
-            className="col-span-2 md:col-span-1"
+            className="row-start-3 col-start-2 col-span-4"
           >
             <Image src="/assets/img/robi-logo.svg" alt="Robi logo" fill />
           </a>
@@ -58,31 +58,31 @@ export default function HomeClients() {
             href="https://polarbd.com/"
             target="_blank"
             title="Polar Ice Cream"
-            className="col-span-2 md:col-span-1"
+            className="row-start-3 col-start-7 col-span-5"
           >
             <Image src="/assets/img/polar-logo.jpeg" alt="Polar logo" fill />
-          </a>
-
-          <a
-            href="https://www.police.gov.bd/"
-            target="_blank"
-            title="Bangladesh Police"
-            className="col-span-2 md:col-span-1"
-          >
-            <Image
-              src="/assets/img/bd-police-logo.png"
-              alt="BD Police logo"
-              fill
-            />
           </a>
 
           <a
             href="http://wsmesuppliersplatform.smef.gov.bd/"
             target="_blank"
             title="Small & Medium Enterprise Foundation"
-            className="col-span-2 md:col-span-1"
+            className="row-start-4 col-start-2 col-span-4"
           >
             <Image src="/assets/img/smef-logo.jpg" alt="SMEF logo" fill />
+          </a>
+
+          <a
+            href="https://www.police.gov.bd/"
+            target="_blank"
+            title="Bangladesh Police"
+            className="row-start-4 col-start-7 col-span-5"
+          >
+            <Image
+              src="/assets/img/bd-police-logo.svg"
+              alt="BD Police logo"
+              fill
+            />
           </a>
         </div>
       </div>
