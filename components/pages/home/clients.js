@@ -60,7 +60,7 @@ export default function HomeClients() {
             title="Polar Ice Cream"
             className="row-start-3 col-start-7 col-span-5"
           >
-            <Image src="/assets/img/polar-logo.jpeg" alt="Polar logo" fill />
+            <Image src="/assets/img/polar-logo.png" alt="Polar logo" fill />
           </a>
 
           <a

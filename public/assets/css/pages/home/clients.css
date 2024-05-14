@@ -10,7 +10,7 @@
   position: relative;
   display: block;
   @apply w-full;
-  @apply h-16 md:h-20 lg:h-32;
+  @apply h-20 md:h-20 lg:h-32;
   /* border: 1px solid red; */
 }
 
