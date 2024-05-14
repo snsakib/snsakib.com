@@ -18,43 +18,17 @@ export default function HomeClients() {
             develop my skills.
           </p>
         </div>
-        <div className="w-full lg:w-1/2 grid grid-cols-3 justify-items-center items-center gap-5">
+        <div className="client-logos w-full lg:w-1/2 grid grid-cols-4 justify-items-center items-center gap-5">
           <a
             href="https://www.worldbank.org/"
             target="_blank"
             title="The World Bank"
+            className="col-span-4 md:col-span-2"
           >
             <Image
               src="/assets/img/original-logos/world-bank-logo.svg"
-              width={200}
-              height={200}
               alt="World Bank logo"
-            />
-          </a>
-
-          <a
-            href="https://www.robi.com.bd/"
-            target="_blank"
-            title="Robi Axiata Limited"
-          >
-            <Image
-              src="/assets/img/robi-logo.svg"
-              width={150}
-              height={150}
-              alt="Robi logo"
-            />
-          </a>
-
-          <a
-            href="https://polarbd.com/"
-            target="_blank"
-            title="Polar Ice Cream"
-          >
-            <Image
-              src="/assets/img/polar-logo.jpeg"
-              width={180}
-              height={180}
-              alt="Polar logo"
+              fill
             />
           </a>
 
@@ -62,25 +36,43 @@ export default function HomeClients() {
             href="https://col.org"
             target="_blank"
             title="Commonwealth of Learning"
+            className="col-span-4 md:col-span-2"
           >
             <Image
               src="/assets/img/original-logos/col-logo.webp"
-              width={200}
-              height={200}
               alt="Commonwealth of Learning logo"
+              fill
             />
+          </a>
+
+          <a
+            href="https://www.robi.com.bd/"
+            target="_blank"
+            title="Robi Axiata Limited"
+            className="col-span-2 md:col-span-1"
+          >
+            <Image src="/assets/img/robi-logo.svg" alt="Robi logo" fill />
+          </a>
+
+          <a
+            href="https://polarbd.com/"
+            target="_blank"
+            title="Polar Ice Cream"
+            className="col-span-2 md:col-span-1"
+          >
+            <Image src="/assets/img/polar-logo.jpeg" alt="Polar logo" fill />
           </a>
 
           <a
             href="https://www.police.gov.bd/"
             target="_blank"
             title="Bangladesh Police"
+            className="col-span-2 md:col-span-1"
           >
             <Image
               src="/assets/img/bd-police-logo.png"
-              width={170}
-              height={170}
               alt="BD Police logo"
+              fill
             />
           </a>
 
@@ -88,13 +80,9 @@ export default function HomeClients() {
             href="http://wsmesuppliersplatform.smef.gov.bd/"
             target="_blank"
             title="Small & Medium Enterprise Foundation"
+            className="col-span-2 md:col-span-1"
           >
-            <Image
-              src="/assets/img/smef-logo.jpg"
-              width={150}
-              height={150}
-              alt="SMEF logo"
-            />
+            <Image src="/assets/img/smef-logo.jpg" alt="SMEF logo" fill />
           </a>
         </div>
       </div>
