@@ -1,0 +1,163 @@
+/* Gallery Screenshots - Start */
+.gallery {
+  width: 100%;
+}
+
+.gallery-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @apply h-64 md:h-96;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-item {
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+  z-index: 0;
+  border-radius: 15px;
+  background-size: contain;
+}
+
+.gallery-item-1,
+.gallery-item-3 {
+  left: 30%;
+  opacity: 0.5;
+  width: 50%;
+  height: 80%;
+  max-width: 450px;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+.gallery-item-2 {
+  height: 90%;
+  width: 65%;
+  max-width: 600px;
+  box-shadow: -2px 5px 33px 6px rgba(0, 0, 0, 0.35);
+  opacity: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.gallery-item-3 {
+  left: 70%;
+  transform: translateX(-50%);
+}
+
+/* Gallery Screenshots - End */
+
+/* Gallery Descriptions - Start */
+
+.gallery-description-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @apply h-80 md:h-72 lg:h-64;
+  position: relative;
+  overflow: hidden;
+  @apply mx-auto mt-2 md:mt-5;
+}
+
+.gallery-description {
+  left: 50%;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 800px;
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+  z-index: 0;
+}
+
+.gallery-description-1,
+.gallery-description-3 {
+  top: 10%;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+.gallery-description-2 {
+  top: 0;
+  opacity: 1;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.gallery-description-3 {
+  transform: translateX(-50%);
+}
+
+.description-title {
+  @apply text-center font-bold text-xl md:text-3xl;
+  color: var(--orange);
+}
+
+.description-text {
+  @apply md:text-xl mt-2 text-center;
+}
+
+.description-tech {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  @apply md:text-xl text-center my-5;
+}
+
+.tech-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @apply px-2 md:px-4 md:py-2;
+}
+
+.tech-item-logo {
+  display: block;
+  @apply mr-1 md:mr-2;
+}
+
+.tech-item-text {
+  display: block;
+  @apply text-lg md:text-xl font-bold;
+}
+
+.description-link {
+  @apply block text-lg md:text-2xl font-bold text-center px-5 py-2 mx-auto mt-8 md:py-3 md:w-1/2;
+  color: var(--orange);
+  border: 1px solid var(--orange);
+  border-radius: 3px;
+}
+
+/* Gallery Descriptions - End */
+
+.gallery-controls {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 0;
+  height: 60px;
+}
+
+.gallery-controls button {
+  color: var(--orange);
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 30px;
+  padding: 12px;
+  margin: 0 50px;
+  transition: all 0.2s ease-in-out;
+}
+
+.gallery-controls button:hover {
+  border: 2px solid var(--orange);
+}
+
+.gallery-controls button:focus {
+  outline: none;
+}

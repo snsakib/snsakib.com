@@ -1,5 +1,5 @@
 .hero-wrapper {
-  background-color: #181819;
+  background-color: var(--section-bg-color);
   position: relative;
 }
 
@@ -62,12 +62,13 @@
 
 /* Page Divider - Start */
 
-.page-divider {
+.home-hero-section-divider {
   position: absolute;
-  background-image: url("../../img/waves.svg");
+  background-image: url("../../../img/home-hero-section-divider.svg");
   height: 100px;
   width: 100%;
   bottom: -99px;
+  z-index: 5;
 }
 
 /* Page Divider - End */

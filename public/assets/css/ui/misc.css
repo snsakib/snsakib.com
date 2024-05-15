@@ -1,12 +1,24 @@
 /* Text Gradient - Start */
-.text-gradient {
+.text-gradient-1 {
   background: hsla(340, 80%, 69%, 1);
   background: linear-gradient(
-    135deg,
+    90deg,
     hsla(340, 80%, 69%, 1) 0%,
     hsla(15, 93%, 71%, 1) 100%
   );
-  background-size: 50% 50%;
+  background-size: 100% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-2 {
+  background: hsla(340, 80%, 69%, 1);
+  background: linear-gradient(
+    90deg,
+    hsla(340, 80%, 69%, 1) 0%,
+    hsla(15, 93%, 71%, 1) 100%
+  );
+  background-size: 100% 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -18,7 +30,7 @@
   background-size: 400% 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: AnimateGradient 5s ease-in-out infinite;
+  animation: AnimateGradient 10s ease-in-out infinite;
 }
 
 @keyframes AnimateGradient {

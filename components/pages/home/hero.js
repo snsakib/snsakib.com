@@ -108,7 +108,7 @@ export default function HomeHero() {
           </a>
         </div>
       </div>
-      <div className="page-divider"></div>
+      <div className="home-hero-section-divider"></div>
     </section>
   );
 }

@@ -1,6 +1,8 @@
 :root {
-  --white: 0, 0, 0;
-  --black: #090b10;
+  --white: #fafaf9;
+  --orange: #da5730;
+  --black: #181819;
+  --section-bg-color: #181819;
 }
 
 * {
@@ -9,6 +11,7 @@
 
 body {
   color: black;
+  @apply bg-stone-50;
 }
 
 @media (prefers-color-scheme: dark) {
