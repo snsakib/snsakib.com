@@ -30,7 +30,7 @@
   background-size: 400% 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: AnimateGradient 5s ease-in-out infinite;
+  animation: AnimateGradient 10s ease-in-out infinite;
 }
 
 @keyframes AnimateGradient {

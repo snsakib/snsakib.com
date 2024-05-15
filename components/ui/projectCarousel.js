@@ -102,11 +102,11 @@ export default function ProjectCarousel() {
             <div className="tech-item">
               <img
                 className="tech-item-logo"
-                src="/assets/img/tech-logos/vue-logo.svg"
+                src="/assets/img/tech-logos/node-logo.svg"
                 width="20px"
                 height="20px"
               />
-              <span className="tech-item-text text-emerald-500">Vue 2</span>
+              <span className="tech-item-text text-lime-500">Node</span>
             </div>
             <div className="tech-item">
               <img
@@ -120,11 +120,11 @@ export default function ProjectCarousel() {
             <div className="tech-item">
               <img
                 className="tech-item-logo"
-                src="/assets/img/tech-logos/node-logo.svg"
+                src="/assets/img/tech-logos/vue-logo.svg"
                 width="20px"
                 height="20px"
               />
-              <span className="tech-item-text text-lime-500">Node</span>
+              <span className="tech-item-text text-emerald-500">Vue 2</span>
             </div>
           </div>
           <a
@@ -162,11 +162,11 @@ export default function ProjectCarousel() {
             <div className="tech-item w-1/2 md:w-auto">
               <img
                 className="tech-item-logo"
-                src="/assets/img/tech-logos/vue-logo.svg"
+                src="/assets/img/tech-logos/node-logo.svg"
                 width="20px"
                 height="20px"
               />
-              <span className="tech-item-text text-emerald-500">Vue 2</span>
+              <span className="tech-item-text text-lime-500">Node</span>
             </div>
 
             <div className="tech-item w-1/2 md:w-auto">
@@ -182,11 +182,11 @@ export default function ProjectCarousel() {
             <div className="tech-item w-1/2 md:w-auto">
               <img
                 className="tech-item-logo"
-                src="/assets/img/tech-logos/node-logo.svg"
+                src="/assets/img/tech-logos/vue-logo.svg"
                 width="20px"
                 height="20px"
               />
-              <span className="tech-item-text text-lime-500">Node</span>
+              <span className="tech-item-text text-emerald-500">Vue 2</span>
             </div>
           </div>
           <a

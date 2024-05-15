@@ -1,3 +1,4 @@
+import { incompleeta } from "@/app/fonts-loader";
 import Image from "next/image";
 
 export default function HomeClients() {
@@ -5,8 +6,13 @@ export default function HomeClients() {
     <section id="home-clients" className="bg-white">
       <div className="flex justify-between items-center flex-col lg:flex-row page-section pt-20 pb-10">
         <div className="w-full lg:w-1/2 md:pt-10 self-start text-black">
-          <h2 className="section-heading mb-3 md:mb-7 text-gradient-1 text-center lg:text-left">
-            My Top Clients
+          <h2
+            className={
+              incompleeta.className +
+              " section-heading mb-3 md:mb-7 text-gradient-1 text-center lg:text-left"
+            }
+          >
+            My Clients
           </h2>
           <p className="md:text-2xl mb-10 lg:pr-20 xl:pr-24 2xl:pr-32 text-justify">
             Throughout my professional journey, I have worked with some of the
