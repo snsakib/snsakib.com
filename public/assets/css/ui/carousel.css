@@ -57,7 +57,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 300px;
+  @apply h-80 md:h-72 lg:h-64;
   position: relative;
   overflow: hidden;
   @apply mx-auto mt-2 md:mt-5;
