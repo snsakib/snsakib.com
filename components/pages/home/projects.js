@@ -1,18 +1,15 @@
-import Carousel from "../../ui/carousel";
+import ProjectCarousel from "../../ui/projectCarousel";
 
 export default function HomeProjects() {
   return (
     <section
       id="home-projects"
-      className="page-section text-stone-50 pt-28 pb-10"
+      className="page-section text-stone-50 pt-16 pb-10"
     >
-      <div className="text-center mb-10">
-        <h2 className="section-heading mb-5 text-gradient-2">My Works</h2>
-        <p className="text-md md:text-2xl">
-          Here are some of my projects. I have been working
-        </p>
+      <div className="text-center mb-5">
+        <h2 className="section-heading mb-2 text-gradient-2">My Works</h2>
       </div>
-      <Carousel />
+      <ProjectCarousel />
     </section>
   );
 }
