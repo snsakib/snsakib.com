@@ -132,7 +132,7 @@ export default function ProjectCarousel() {
             href="https://robishop.com.bd/"
             target="_blank"
           >
-            Visit Website
+            View Project
           </a>
         </div>
 
@@ -194,7 +194,7 @@ export default function ProjectCarousel() {
             href="http://wsmesuppliersplatform.smef.gov.bd/"
             target="_blank"
           >
-            Visit Website
+            View Project
           </a>
         </div>
 
@@ -232,7 +232,7 @@ export default function ProjectCarousel() {
             href="https://polarbd.com"
             target="_blank"
           >
-            Visit Website
+            View Project
           </a>
         </div>
       </div>

@@ -131,6 +131,13 @@
   color: var(--orange);
   border: 1px solid var(--orange);
   border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.description-link:hover {
+  color: var(--black);
+  border: 1px solid var(--orange);
+  background-color: var(--orange);
 }
 
 /* Gallery Descriptions - End */

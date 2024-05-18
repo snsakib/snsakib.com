@@ -17,6 +17,7 @@ export default function HomeProjects() {
         </h2>
       </div>
       <ProjectCarousel />
+      <div className="home-projects-section-divider"></div>
     </section>
   );
 }
