@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function HomeClients() {
   return (
-    <section id="home-clients" className="bg-white">
+    <section id="home-clients">
       <div className="flex justify-between items-center flex-col lg:flex-row page-section pt-24 md:pt-28 pb-10">
         <div className="w-full lg:w-1/2 md:pt-10 self-start text-black">
           <h2
@@ -88,7 +88,6 @@ export default function HomeClients() {
           </a>
         </div>
       </div>
-      <div className="home-clients-section-divider"></div>
     </section>
   );
 }

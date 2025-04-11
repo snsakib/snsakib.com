@@ -1,4 +1,4 @@
-import { Roboto } from "next/font/google";
+import { Lato } from "next/font/google";
 import localFont from "next/font/local";
 
 export const incompleeta = localFont({
@@ -6,9 +6,9 @@ export const incompleeta = localFont({
   display: "swap",
 });
 
-export const roboto = Roboto({
+export const lato = Lato({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-roboto",
-  weight: ["100", "300", "400", "500", "700", "900"],
+  variable: "--font-lato",
+  weight: ["100", "300", "400", "700", "900"],
 });

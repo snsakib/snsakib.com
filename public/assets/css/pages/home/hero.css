@@ -1,18 +1,38 @@
 .hero-wrapper {
-  background-color: var(--section-bg-color);
   position: relative;
+  background: var(--section-bg-color);
+  clip-path: polygon(0 0, 100% 0, 100% 93%, 50% 100%, 0 93%);
 }
 
 #home-hero {
-  /* min-height: calc(100vh - 60px); */
-  display: grid;
-  grid-template-rows: 25% auto 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  min-height: 70vh;
+}
+
+#home-hero-img {
+  width: 400px;
+}
+
+#home-hero-title {
+  color: var(--white);
 }
 
 /* Contact Links - Start */
+#contact-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 75px;
+}
+
 .contact-link {
-  height: 2.8rem;
-  width: 2.8rem;
+  height: 2rem;
+  width: 2rem;
+  transition: transform 0.2s ease-in-out;
 }
 
 .contact-link:focus {
@@ -20,55 +40,34 @@
 }
 
 .contact-link:hover {
-  transform: scale(1.2);
+  transform: scale(1.2) rotate(15deg);
 }
 
 .contact-link svg {
   pointer-events: none;
-  margin: 5px;
-}
-
-@media screen and (min-width: 1080px) {
-  .contact-link {
-    height: 3.2rem;
-    width: 3.2rem;
-  }
 }
 /* Contact Links - End */
 
 @media only screen and (min-width: 999.9px) {
   /* Home Page - Hero Section Start */
+  .hero-wrapper {
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+  }
+
   #home-hero {
-    /* min-height: calc(100vh); */
-    grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(5, 20%);
+    gap: 50px;
+    min-height: 90vh;
   }
 
-  #home-hero #hero-title {
-    grid-row: 1/4;
-    align-self: center;
-  }
-
-  #home-hero #hero-video {
-    grid-row: 1/6;
-  }
-
-  #home-hero #contact-links {
-    grid-row: 4/6;
-    align-self: center;
+  #home-hero-img {
+    min-width: 1000px;
   }
   /* Home Page - Hero Section End */
 }
 
-/* Page Divider - Start */
-
-.home-hero-section-divider {
-  position: absolute;
-  background-image: url("../../../img/home-hero-section-divider.svg");
-  height: 100px;
-  width: 100%;
-  bottom: -99px;
-  z-index: 5;
+@media only screen and (min-width: 1080px) {
+  .contact-link {
+    height: 2.7rem;
+    width: 2.7rem;
+  }
 }
-
-/* Page Divider - End */

@@ -2,7 +2,7 @@ import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 
 import "./globals.css";
-import { roboto } from "@/app/fonts-loader";
+import { lato } from "@/app/fonts-loader";
 
 export const metadata = {
   title: "S N Sakib | Full-Stack Web Developer & Blockchain Developer",
@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
+      <body className={lato.className}>
         {/* <Header/> */}
         {children}
         {/* <Footer/> */}
