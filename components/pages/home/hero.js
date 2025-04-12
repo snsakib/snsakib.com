@@ -1,7 +1,7 @@
-"use client"
+"use client";
 import { useEffect, useRef } from 'react';
-import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
 import { TextPlugin } from "gsap/TextPlugin";
 
 gsap.registerPlugin(TextPlugin);
@@ -50,7 +50,7 @@ export default function HomeHero() {
         y: 0,
         opacity: 1,
         duration: 0.5,
-        delay: 1,
+        delay: 0.5,
         stagger: 0.1,
         ease: "power1.out"
       }
