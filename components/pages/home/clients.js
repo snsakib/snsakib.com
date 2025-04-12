@@ -1,30 +1,79 @@
+"use client";
 import { incompleeta } from "@/app/fonts-loader";
 import Image from "next/image";
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function HomeClients() {
+
+  useGSAP(() => {
+    gsap.fromTo(
+      '.fade-right', 
+      {
+        x: -100,
+        opacity: 0
+      },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 0.3,
+        stagger: 0.1,
+        ease: "power1.out",
+        scrollTrigger: {
+          trigger: "#home-clients",
+          start: "top 55%",
+          toggleActions: "play none none reverse",
+        },
+      }
+    )
+
+    gsap.fromTo(
+      '.client-logos a', 
+      {
+        x: 100,
+        opacity: 0
+      },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 0.3,
+        stagger: 0.1,
+        ease: "power1.out",
+        scrollTrigger: {
+          trigger: "#home-clients",
+          start: "top 55%",
+          toggleActions: "play none none reverse",
+        },
+      }
+    )
+  })
+
   return (
-    <section id="home-clients">
-      <div className="flex justify-between items-center flex-col lg:flex-row page-section pt-24 md:pt-28 pb-10">
+    <section id="clients-wrapper">
+      <div id="home-clients" className="page-section">
         <div className="w-full lg:w-1/2 md:pt-10 self-start text-black">
           <h2
             className={
               incompleeta.className +
-              " section-heading mb-3 md:mb-7 text-gradient-1 text-center lg:text-left"
+              " section-heading fade-right text-gradient-1 mb-3 md:mb-7 text-center lg:text-left"
             }
           >
             My Clients
           </h2>
           <p className="md:text-2xl mb-10 lg:pr-20 xl:pr-24 2xl:pr-32 text-justify">
-            Throughout my professional journey, I have worked with some of the
-            most reputable organizations across different industries.
+            <span className="fade-right inline-block">Throughout my professional journey, I have worked with some of the
+            most reputable organizations across different industries.</span>
             <br />
             <br />
-            These collaborations have allowed me to encounter and overcome
+            <span className="fade-right inline-block">These collaborations have allowed me to encounter and overcome
             unique challenges. These opportunities helped me to learn, grow, and
-            develop my skills.
+            develop my skills.</span>
           </p>
         </div>
-        <div className="client-logos w-full lg:w-1/2 grid grid-cols-4 justify-items-center items-center gap-5 md:gap-x-20 md:gap-y-10 lg:gap-x-5 lg:gap-y-10 xl:gap-10">
+        <div className="client-logos">
           <a
             href="https://www.worldbank.org/"
             target="_blank"
@@ -68,15 +117,11 @@ export default function HomeClients() {
           </a>
 
           <a
-            href="https://www.police.gov.bd/"
+            href="https://educative.io/"
             target="_blank"
-            title="Bangladesh Police"
+            title="educative.io"
           >
-            <Image
-              src="/assets/img/bd-police-logo.svg"
-              alt="BD Police logo"
-              fill
-            />
+            <Image src="/assets/img/educative-logo.svg" alt="educative.io logo" fill />
           </a>
 
           <a
@@ -84,8 +129,9 @@ export default function HomeClients() {
             target="_blank"
             title="Small & Medium Enterprise Foundation"
           >
-            <Image src="/assets/img/smef-logo.jpg" alt="SMEF logo" fill />
+            <Image src="/assets/img/smef-logo.png" alt="SMEF logo" fill />
           </a>
+
         </div>
       </div>
     </section>
