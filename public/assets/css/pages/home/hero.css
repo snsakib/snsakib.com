@@ -15,10 +15,12 @@
 
 #home-hero-img {
   width: 400px;
+  opacity: 0;
 }
 
 #home-hero-title {
   color: var(--white);
+  opacity: 0;
 }
 
 /* Contact Links - Start */
@@ -32,7 +34,7 @@
 .contact-link {
   height: 2rem;
   width: 2rem;
-  transition: transform 0.2s ease-in-out;
+  opacity: 0;
 }
 
 .contact-link:focus {
@@ -40,6 +42,7 @@
 }
 
 .contact-link:hover {
+  transition: transform 0.2s ease-in-out;
   transform: scale(1.2) rotate(15deg);
 }
 
