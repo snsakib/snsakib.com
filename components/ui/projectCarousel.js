@@ -72,7 +72,7 @@ export default function ProjectCarousel() {
           ref={projectOne}
         />
         <Image
-          src="/assets/img/project-screenshots/wb-smef-project.png"
+          src="/assets/img/project-screenshots/wb-smef-project-new.png"
           width={500}
           height={500}
           alt="World Bank and SME Foundation project screenshot"
@@ -124,7 +124,7 @@ export default function ProjectCarousel() {
                 width="20px"
                 height="20px"
               />
-              <span className="tech-item-text text-emerald-500">Vue 2</span>
+              <span className="tech-item-text text-emerald-500">Vue</span>
             </div>
           </div>
           <a
@@ -156,7 +156,7 @@ export default function ProjectCarousel() {
                 width="20px"
                 height="20px"
               />
-              <span className="tech-item-text text-red-600">Laravel 8</span>
+              <span className="tech-item-text text-red-600">Laravel</span>
             </div>
 
             <div className="tech-item w-1/2 md:w-auto">
@@ -186,7 +186,7 @@ export default function ProjectCarousel() {
                 width="20px"
                 height="20px"
               />
-              <span className="tech-item-text text-emerald-500">Vue 2</span>
+              <span className="tech-item-text text-emerald-500">Vue</span>
             </div>
           </div>
           <a

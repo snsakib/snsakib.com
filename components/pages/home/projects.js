@@ -5,19 +5,18 @@ export default function HomeProjects() {
   return (
     <section
       id="home-projects"
-      className="page-section text-stone-50 pt-16 pb-10"
+      className="page-section text-stone-50 py-6 md:py-10"
     >
-      <div className="text-center mb-5">
+      <div className="text-center">
         <h2
           className={
-            incompleeta.className + " section-heading mb-2 text-gradient-2"
+            incompleeta.className + " section-heading text-gradient-2"
           }
         >
           My Works
         </h2>
       </div>
       <ProjectCarousel />
-      <div className="home-projects-section-divider"></div>
     </section>
   );
 }
