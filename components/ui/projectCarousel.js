@@ -12,6 +12,7 @@ export default function ProjectCarousel() {
   const descriptionTwo = useRef(null);
   const descriptionThree = useRef(null);
 
+  const galleryRef = useRef(null);
   let projects = [];
   let descriptions = [];
 
@@ -51,6 +52,46 @@ export default function ProjectCarousel() {
     });
   };
 
+  // Touch support
+  useEffect(() => {
+    const galleryContainer = galleryRef.current;
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    const handleTouchStart = (e) => {
+      touchStartX = e.touches[0].clientX;
+    };
+
+    const handleTouchMove = (e) => {
+      touchEndX = e.touches[0].clientX;
+    };
+
+    const handleTouchEnd = () => {
+      const swipeDistance = touchEndX - touchStartX;
+      const minSwipeDistance = 50;
+
+      if (swipeDistance > minSwipeDistance) {
+        setCurrentState("previous");
+      } else if (swipeDistance < -minSwipeDistance) {
+        setCurrentState("next");
+      }
+    };
+
+    if (galleryContainer) {
+      galleryContainer.addEventListener("touchstart", handleTouchStart);
+      galleryContainer.addEventListener("touchmove", handleTouchMove);
+      galleryContainer.addEventListener("touchend", handleTouchEnd);
+    }
+
+    return () => {
+      if (galleryContainer) {
+        galleryContainer.removeEventListener("touchstart", handleTouchStart);
+        galleryContainer.removeEventListener("touchmove", handleTouchMove);
+        galleryContainer.removeEventListener("touchend", handleTouchEnd);
+      }
+    };
+  }, []);
+
   useEffect(() => {
     projects = [projectOne.current, projectTwo.current, projectThree.current];
     descriptions = [
@@ -61,7 +102,7 @@ export default function ProjectCarousel() {
   }, []);
 
   return (
-    <div className="gallery">
+    <div className="gallery" ref={galleryRef}>
       <div className="gallery-container">
         <Image
           src="/assets/img/project-screenshots/robishop-project.png"
