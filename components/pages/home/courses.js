@@ -1,23 +1,52 @@
+"use client";
 import { incompleeta } from "@/app/fonts-loader";
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function HomeCourses() {
+
+  useGSAP(() => {
+    gsap.fromTo(
+      '.fade-up',
+      {
+        y: 100,
+        opacity: 0
+      },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 0.5,
+        stagger: 0.1,
+        ease: "power1.out",
+        scrollTrigger: {
+          trigger: "#home-courses",
+          start: "top 50%",
+          toggleActions: "play none none reverse"
+        }
+      }
+    )
+  })
+
   return (
     <section
       id="home-courses"
-      className="page-section text-stone-50 pt-28 md:pt-20 pb-20"
+      className="page-section text-stone-50 py-6 md:py-10"
     >
       <div>
         <h2
           className={
             incompleeta.className +
-            " section-heading mb-5 text-gradient-1 text-center"
+            " section-heading mb-5 text-gradient-1 text-center fade-up"
           }
         >
           My Courses
         </h2>
       </div>
       <div className="courses-container">
-        <div className="course">
+        <div className="course fade-up">
           <img
             src="/assets/img/course-banners/nft-marketplace-dapp.avif"
             alt="course image"
@@ -65,7 +94,7 @@ export default function HomeCourses() {
           </div>
         </div>
 
-        <div className="course">
+        <div className="course fade-up">
           <div>
             <img
               src="/assets/img/course-banners/nft-marketplace-smart-contract.avif"
@@ -117,7 +146,7 @@ export default function HomeCourses() {
           </div>
         </div>
 
-        <div className="course">
+        <div className="course fade-up">
           <img
             src="/assets/img/course-banners/angular-ngrx.avif"
             alt="course image"
