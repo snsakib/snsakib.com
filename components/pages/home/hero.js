@@ -78,7 +78,7 @@ export default function HomeHero() {
     <section className="hero-wrapper">
       <div id="home-hero" className="page-section">
         <img ref={imgRef} id="home-hero-img" src="/assets/img/home-hero-name.svg" />
-        <h2 id="home-hero-title" ref={textRef} className="text-xl md:text-3xl xl:text-4xl font-bold">
+        <h2 id="home-hero-title" ref={textRef} className="text-xl md:text-3xl xl:text-4xl">
           Full Stack Web Developer
         </h2>
         <div

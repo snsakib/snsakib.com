@@ -1,4 +1,4 @@
-import { Lato } from "next/font/google";
+import { Poppins } from "next/font/google";
 import localFont from "next/font/local";
 
 export const incompleeta = localFont({
@@ -6,9 +6,9 @@ export const incompleeta = localFont({
   display: "swap",
 });
 
-export const lato = Lato({
+export const poppins = Poppins({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-lato",
+  variable: "--font-poppings",
   weight: ["100", "300", "400", "700", "900"],
 });
