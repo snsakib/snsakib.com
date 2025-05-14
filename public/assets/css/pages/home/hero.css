@@ -1,7 +1,6 @@
 .hero-wrapper {
   position: relative;
   background: var(--section-bg-color);
-  clip-path: polygon(0 0, 100% 0, 100% 93%, 50% 100%, 0 93%);
 }
 
 #home-hero {
@@ -53,9 +52,6 @@
 
 @media only screen and (min-width: 999.9px) {
   /* Home Page - Hero Section Start */
-  .hero-wrapper {
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
-  }
 
   #home-hero {
     gap: 50px;
