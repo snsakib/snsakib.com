@@ -54,7 +54,7 @@ export default function HomeClients() {
   return (
     <section id="clients-wrapper">
       <div id="home-clients" className="page-section">
-        <div className="w-full lg:w-1/2 md:pt-10 self-start text-black">
+        <div className="w-full lg:w-1/2 md:pt-10 self-start">
           <h2
             className={
               incompleeta.className +
@@ -63,7 +63,7 @@ export default function HomeClients() {
           >
             My Clients
           </h2>
-          <p className="md:text-2xl mb-10 lg:pr-20 xl:pr-24 2xl:pr-32 text-justify">
+          <p className="md:text-xl mb-10 lg:pr-20 xl:pr-24 2xl:pr-32 text-justify">
             <span className="fade-right inline-block">Throughout my professional journey, I have worked with some of the
             most reputable organizations across different industries.</span>
             <br />
