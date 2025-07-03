@@ -6,19 +6,19 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   gap: 25px;
   min-height: 70vh;
 }
 
 #home-hero-img {
   width: 400px;
-  opacity: 0;
+  opacity: 1;
 }
 
 #home-hero-title {
   color: var(--text-color);
-  opacity: 0;
+  opacity: 1;
 }
 
 /* Contact Links - Start */
