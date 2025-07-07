@@ -1,137 +1,169 @@
 "use client";
 import { incompleeta } from "@/app/fonts-loader";
 import Image from "next/image";
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import horizontalLoop from "@/utils/js/horizontalLoop";
 
 export default function HomeClients() {
-
+  
   useGSAP(() => {
-    gsap.fromTo(
-      '.fade-right', 
+    const mm = gsap.matchMedia();
+    
+    mm.add(
       {
-        x: -100,
-        opacity: 0
+        isMobile: "(max-width: 767px)",
+        isDesktop: "(min-width: 768px)",
       },
-      {
-        x: 0,
-        opacity: 1,
-        duration: 0.3,
-        stagger: 0.1,
-        ease: "power1.out",
-        scrollTrigger: {
-          trigger: "#home-clients",
-          start: "top 55%",
-          toggleActions: "play none none reverse",
-        },
-      }
-    )
+      (context) => {
+        const { isMobile, isDesktop } = context.conditions;
 
-    gsap.fromTo(
-      '.client-logos a', 
-      {
-        x: 100,
-        opacity: 0
-      },
-      {
-        x: 0,
-        opacity: 1,
-        duration: 0.3,
-        stagger: 0.1,
-        ease: "power1.out",
-        scrollTrigger: {
-          trigger: "#home-clients",
-          start: "top 55%",
-          toggleActions: "play none none reverse",
-        },
+        horizontalLoop(".client-logo", {
+          repeat: -1,
+          paddingRight: isMobile ? 50 : 100,
+          speed: 1,
+        });
       }
-    )
-  })
+    );
+
+  }, []);
 
   return (
     <section id="clients-wrapper">
-      <div id="home-clients" className="page-section">
-        <div className="w-full lg:w-1/2 md:pt-10 self-start">
+      <div id="home-clients">
+        <div className="w-full">
           <h2
             className={
               incompleeta.className +
-              " section-heading fade-right text-gradient-1 mb-3 md:mb-7 text-center lg:text-left"
+              " section-heading text-gradient-1 mb-10 text-center"
             }
           >
             My Clients
           </h2>
-          <p className="md:text-xl mb-10 lg:pr-20 xl:pr-24 2xl:pr-32 text-justify">
-            <span className="fade-right inline-block">Throughout my professional journey, I have worked with some of the
-            most reputable organizations across different industries.</span>
-            <br />
-            <br />
-            <span className="fade-right inline-block">These collaborations have allowed me to encounter and overcome
-            unique challenges. These opportunities helped me to learn, grow, and
-            develop my skills.</span>
-          </p>
         </div>
+
         <div className="client-logos">
-          <a
-            href="https://www.worldbank.org/"
-            target="_blank"
-            title="The World Bank"
-            className="col-span-2"
-          >
-            <Image
-              src="/assets/img/world-bank-logo.svg"
-              alt="World Bank logo"
-              fill
-            />
-          </a>
+          <div className="scrolling-logos">
+            <div className="client-logo">
+              <a
+                href="https://www.worldbank.org/"
+                target="_blank"
+                title="The World Bank"
+              >
+                <Image
+                  src="/assets/img/world-bank-logo.svg"
+                  alt="World Bank logo"
+                  fill
+                />
+              </a>
+            </div>
 
-          <a
-            href="https://col.org"
-            target="_blank"
-            title="Commonwealth of Learning"
-            className="col-span-2"
-          >
-            <Image
-              src="/assets/img/col-logo.png"
-              alt="Commonwealth of Learning logo"
-              fill
-            />
-          </a>
+            <div className="client-logo">
+              <a
+                href="https://col.org"
+                target="_blank"
+                title="Commonwealth of Learning"
+              >
+                <Image
+                  src="/assets/img/col-logo.png"
+                  alt="Commonwealth of Learning logo"
+                  fill
+                />
+              </a>
+            </div>
 
-          <a
-            href="https://www.robi.com.bd/"
-            target="_blank"
-            title="Robi Axiata Limited"
-          >
-            <Image src="/assets/img/robi-logo.svg" alt="Robi logo" fill />
-          </a>
+            <div className="client-logo">
+              <a
+                href="https://www.greenclimate.fund/"
+                target="_blank"
+                title="Green Climate Fund"
+              >
+                <Image
+                  src="/assets/img/gcf-logo.svg"
+                  alt="Green Climate Fund logo"
+                  fill
+                />
+              </a>
+            </div>
 
-          <a
-            href="https://polarbd.com/"
-            target="_blank"
-            title="Polar Ice Cream"
-          >
-            <Image src="/assets/img/polar-logo.png" alt="Polar logo" fill />
-          </a>
+            <div className="client-logo">
+              <a
+                href="https://educative.io/"
+                target="_blank"
+                title="educative.io"
+              >
+                <Image
+                  src="/assets/img/educative-logo.svg"
+                  alt="educative.io logo"
+                  fill
+                />
+              </a>
+            </div>
 
-          <a
-            href="https://educative.io/"
-            target="_blank"
-            title="educative.io"
-          >
-            <Image src="/assets/img/educative-logo.svg" alt="educative.io logo" fill />
-          </a>
+            <div className="client-logo">
+              <a
+                href="https://www.robi.com.bd/"
+                target="_blank"
+                title="Robi Axiata Limited"
+              >
+                <Image src="/assets/img/robi-logo.svg" alt="Robi logo" fill />
+              </a>
+            </div>
 
-          <a
-            href="http://wsmesuppliersplatform.smef.gov.bd/"
-            target="_blank"
-            title="Small & Medium Enterprise Foundation"
-          >
-            <Image src="/assets/img/smef-logo.png" alt="SMEF logo" fill />
-          </a>
+            <div className="client-logo">
+              <a
+                href="https://polarbd.com/"
+                target="_blank"
+                title="Polar Ice Cream"
+              >
+                <Image src="/assets/img/polar-logo.png" alt="Polar logo" fill />
+              </a>
+            </div>
 
+            <div className="client-logo">
+              <a
+                href="http://wsmesuppliersplatform.smef.gov.bd/"
+                target="_blank"
+                title="Small & Medium Enterprise Foundation"
+              >
+                <Image src="/assets/img/smef-logo.png" alt="SMEF logo" fill />
+              </a>
+            </div>
+
+            <div className="client-logo">
+              <a
+                href="https://pksf.org.bd/"
+                target="_blank"
+                title="Palli Karma-Sahayak Foundation"
+              >
+                <Image
+                  src="/assets/img/pksf-logo.svg"
+                  alt="Palli Karma-Sahayak Foundation logo"
+                  fill
+                />
+              </a>
+            </div>
+
+            <div className="client-logo">
+              <a
+                href="https://regfollower.com/"
+                target="_blank"
+                title="RegFollower"
+              >
+                <Image
+                  src="/assets/img/regfollower-logo.png"
+                  alt="RegFollower logo"
+                  fill
+                />
+              </a>
+            </div>
+
+            <div className="client-logo">
+              <a href="https://yapit.app/" target="_blank" title="Yapit">
+                <Image src="/assets/img/yapit-logo.png" alt="Yapit logo" fill />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
