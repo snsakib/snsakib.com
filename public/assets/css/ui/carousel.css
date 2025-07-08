@@ -57,7 +57,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  @apply h-56;
+  @apply h-48;
   position: relative;
   overflow: hidden;
   @apply mx-auto;
@@ -94,7 +94,7 @@
 
 .description-title {
   @apply text-center font-bold text-base md:text-2xl;
-  color: var(--orange);
+  color: var(--text-color);
 }
 
 .description-text {
@@ -106,14 +106,19 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  @apply my-3;
+  gap: 10px;
+  @apply mt-5 mb-10;
 }
 
 .tech-item {
+  background-color: var(--text-color);
   display: flex;
   justify-content: center;
   align-items: center;
-  @apply px-2 md:px-4;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 .tech-item-logo {
@@ -127,17 +132,17 @@
 }
 
 .description-link {
-  @apply block text-sm md:text-lg font-bold text-center px-5 py-1 mx-auto md:py-2 md:w-1/2;
-  color: var(--orange);
-  border: 1px solid var(--orange);
+  @apply block text-sm md:text-lg font-bold text-center px-5 py-2 mx-auto md:w-1/2;
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
   border-radius: 3px;
   transition: all 0.3s ease-in-out;
 }
 
 .description-link:hover {
   color: var(--black);
-  border: 1px solid var(--orange);
-  background-color: var(--orange);
+  border: 1px solid var(--text-color);
+  background-color: var(--text-color);
 }
 
 /* Gallery Descriptions - End */
@@ -148,7 +153,7 @@
 }
 
 .gallery-controls button {
-  color: var(--orange);
+  color: var(--text-color);
   background-color: transparent;
   border: 2px solid transparent;
   border-radius: 50%;
@@ -159,9 +164,17 @@
 }
 
 .gallery-controls button:hover {
-  border: 2px solid var(--orange);
+  border: 2px solid var(--text-color);
 }
 
 .gallery-controls button:focus {
   outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .tech-item {
+    width: 125px;
+    height: 35px;
+    padding: 10px 20px;
+  }
 }
