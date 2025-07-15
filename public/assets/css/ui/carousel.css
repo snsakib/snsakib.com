@@ -57,7 +57,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  @apply h-48;
+  @apply h-60;
   position: relative;
   overflow: hidden;
   @apply mx-auto;
@@ -128,7 +128,7 @@
 
 .tech-item-text {
   display: block;
-  @apply text-sm md:text-base font-bold;
+  @apply text-sm font-bold;
 }
 
 .description-link {
@@ -150,6 +150,7 @@
 .gallery-controls {
   display: flex;
   justify-content: center;
+  @apply mt-2 md:mt-5;
 }
 
 .gallery-controls button {

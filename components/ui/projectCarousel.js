@@ -147,7 +147,7 @@ export default function ProjectCarousel() {
                 width="20px"
                 height="20px"
               />
-              <span className="tech-item-text text-lime-500">Node</span>
+              <span className="tech-item-text text-emerald-500">Node</span>
             </div>
             <div className="tech-item">
               <img
@@ -207,7 +207,7 @@ export default function ProjectCarousel() {
                 width="20px"
                 height="20px"
               />
-              <span className="tech-item-text text-lime-500">Node</span>
+              <span className="tech-item-text text-emerald-500">Node</span>
             </div>
 
             <div className="tech-item w-1/2 md:w-auto">
