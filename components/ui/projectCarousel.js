@@ -134,10 +134,10 @@ export default function ProjectCarousel() {
           className="gallery-description gallery-description-1"
           ref={descriptionOne}
         >
-          <h3 className="description-title">RobiShop</h3>
+          <h3 className="description-title text-gradient-2">RobiShop</h3>
           <p className="description-text">
             An e-commerce platform for the{" "}
-            <span className="font-bold">Robi Axiata Limited, Bangladesh</span>.
+            <span className="font-bold">Robi Axiata Limited, Bangladesh</span>
           </p>
           <div className="description-tech">
             <div className="tech-item">
@@ -181,13 +181,9 @@ export default function ProjectCarousel() {
           className="gallery-description gallery-description-2"
           ref={descriptionTwo}
         >
-          <h3 className="description-title">World Bank & SME Foundation</h3>
+          <h3 className="description-title text-gradient-2">World Bank & SME Foundation</h3>
           <p className="description-text">
-            A joint initiative of the{" "}
-            <span className="font-bold">World Bank</span> and{" "}
-            <span className="font-bold">SME Foundation Bangladesh</span>. It
-            provides female entrepreneurs a marketplace to sell their products
-            to the global consumers.
+            A marketplace for female entrepreneurs to sell their products to the global consumers
           </p>
           <div className="description-tech">
             <div className="tech-item w-1/2 md:w-auto">
@@ -243,10 +239,10 @@ export default function ProjectCarousel() {
           className="gallery-description gallery-description-3"
           ref={descriptionThree}
         >
-          <h3 className="description-title">Polar Ice Cream</h3>
+          <h3 className="description-title text-gradient-2">Polar Ice Cream</h3>
           <p className="description-text">
             An e-commerce platform for the{" "}
-            <span className="font-bold">Polar Ice Cream, Bangladesh</span>.
+            <span className="font-bold">Polar Ice Cream, Bangladesh</span>
           </p>
           <div className="description-tech">
             <div className="tech-item">

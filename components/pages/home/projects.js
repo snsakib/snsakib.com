@@ -10,7 +10,7 @@ export default function HomeProjects() {
       <div className="text-center">
         <h2
           className={
-            incompleeta.className + " section-heading text-gradient-2"
+            incompleeta.className + " section-heading text-gradient-2 mb-5"
           }
         >
           My Works
