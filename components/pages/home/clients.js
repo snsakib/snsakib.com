@@ -44,6 +44,26 @@ export default function HomeClients() {
 
         <div className="client-logos">
           <div className="scrolling-logos">
+            <div className="client-logo client-logo-polar">
+              <a
+                href="https://polarbd.com/"
+                target="_blank"
+                title="Polar Ice Cream"
+              >
+                <Image src="/assets/img/polar-logo.png" alt="Polar logo" fill />
+              </a>
+            </div>
+
+            <div className="client-logo">
+              <a
+                href="https://www.robi.com.bd/"
+                target="_blank"
+                title="Robi Axiata Limited"
+              >
+                <Image src="/assets/img/robi-logo.svg" alt="Robi logo" fill />
+              </a>
+            </div>
+
             <div className="client-logo client-logo-wb">
               <a
                 href="https://www.worldbank.org/"
@@ -97,26 +117,6 @@ export default function HomeClients() {
                   alt="educative.io logo"
                   fill
                 />
-              </a>
-            </div>
-
-            <div className="client-logo">
-              <a
-                href="https://www.robi.com.bd/"
-                target="_blank"
-                title="Robi Axiata Limited"
-              >
-                <Image src="/assets/img/robi-logo.svg" alt="Robi logo" fill />
-              </a>
-            </div>
-
-            <div className="client-logo client-logo-polar">
-              <a
-                href="https://polarbd.com/"
-                target="_blank"
-                title="Polar Ice Cream"
-              >
-                <Image src="/assets/img/polar-logo.png" alt="Polar logo" fill />
               </a>
             </div>
 
