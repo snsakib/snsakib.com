@@ -13,6 +13,10 @@ export default function HomeHero() {
 
     tl.to("#home-hero-service", {
       duration: 1.5,
+      text: "AI",
+      ease: "power2.inOut",
+    }).to("#home-hero-service", {
+      duration: 1.5,
       text: "Blockchain",
       ease: "power2.inOut",
     });
@@ -23,7 +27,7 @@ export default function HomeHero() {
       <div id="home-hero" className="page-section">
         <p className={ portico.className + " text-2xl md:text-3xl xl:text-5xl"}>Hi, I'm</p>
         <img id="home-hero-img" src="/assets/img/home-hero-name.svg" />
-        <p className={"text-xl md:text-2xl xl:text-4xl"}>Helping businesses through <span id="home-hero-service" className="text-gradient-1">Web Development</span> solutions</p>
+        <p className={"text-xl md:text-2xl xl:text-4xl"}>Helping businesses with <span id="home-hero-service" className="text-gradient-1">Web Development</span> solutions</p>
       </div>
     </section>
   );
