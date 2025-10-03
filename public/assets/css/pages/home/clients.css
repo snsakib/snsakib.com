@@ -1,8 +1,10 @@
 #clients-wrapper {
   position: relative;
+  background-color: var(--section-bg);
 }
 
 #home-clients {
+  background-color: var(--bg-color-light);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -25,7 +27,7 @@
 }
 
 .client-logo {
-  background-color: var(--text-color);
+  /* border: 1px solid var(--text-color-dark); */
   border-radius: 5px;
   width: 200px;
   height: 80px;
@@ -49,6 +51,17 @@
   .client-logo {
     width: 220px;
     height: 100px;
+  }
+
+  .client-logo-wb,
+  .client-logo-cwl {
+    width: 300px;
+  }
+
+  .client-logo-gcf,
+  .client-logo-polar,
+  .client-logo-pksf {
+    height: 130px;
   }
   
 }

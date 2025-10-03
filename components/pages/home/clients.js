@@ -44,7 +44,7 @@ export default function HomeClients() {
 
         <div className="client-logos">
           <div className="scrolling-logos">
-            <div className="client-logo">
+            <div className="client-logo client-logo-wb">
               <a
                 href="https://www.worldbank.org/"
                 target="_blank"
@@ -58,7 +58,7 @@ export default function HomeClients() {
               </a>
             </div>
 
-            <div className="client-logo">
+            <div className="client-logo client-logo-cwl">
               <a
                 href="https://col.org"
                 target="_blank"
@@ -72,7 +72,7 @@ export default function HomeClients() {
               </a>
             </div>
 
-            <div className="client-logo">
+            <div className="client-logo client-logo-gcf">
               <a
                 href="https://www.greenclimate.fund/"
                 target="_blank"
@@ -110,7 +110,7 @@ export default function HomeClients() {
               </a>
             </div>
 
-            <div className="client-logo">
+            <div className="client-logo client-logo-polar">
               <a
                 href="https://polarbd.com/"
                 target="_blank"
@@ -130,7 +130,7 @@ export default function HomeClients() {
               </a>
             </div>
 
-            <div className="client-logo">
+            <div className="client-logo client-logo-pksf">
               <a
                 href="https://pksf.org.bd/"
                 target="_blank"
@@ -141,26 +141,6 @@ export default function HomeClients() {
                   alt="Palli Karma-Sahayak Foundation logo"
                   fill
                 />
-              </a>
-            </div>
-
-            <div className="client-logo">
-              <a
-                href="https://regfollower.com/"
-                target="_blank"
-                title="RegFollower"
-              >
-                <Image
-                  src="/assets/img/regfollower-logo.png"
-                  alt="RegFollower logo"
-                  fill
-                />
-              </a>
-            </div>
-
-            <div className="client-logo">
-              <a href="https://yapit.app/" target="_blank" title="Yapit">
-                <Image src="/assets/img/yapit-logo.png" alt="Yapit logo" fill />
               </a>
             </div>
           </div>

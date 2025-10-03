@@ -1,5 +1,5 @@
 #home-courses {
-  color: var(--text-color);
+  color: var(--text-color-light);
 }
 
 .courses-container {
@@ -7,7 +7,7 @@
 }
 
 .course {
-  border: 1px solid var(--text-color);
+  border: 1px solid var(--text-color-light);
   border-radius: 5px;
   overflow: hidden;
   @apply flex flex-col justify-between w-full max-w-96 my-5;
@@ -38,7 +38,7 @@
 .course-tech-item {
   border-radius: 5px;
   padding: 0px 10px;
-  background-color: var(--text-color);
+  background-color: var(--text-color-light);
 }
 
 .course-tech-item-logo {
@@ -50,12 +50,12 @@
 
 .course-link {
   @apply block w-full text-lg md:text-xl font-bold text-center px-5 py-2 mx-auto mt-8 md:py-3;
-  border-top: 1px solid var(--text-color);
+  border-top: 1px solid var(--text-color-light);
   transition: all 0.3s ease-in-out;
 }
 
 .course-link:hover {
   @apply block text-lg md:text-xl font-bold text-center px-5 py-2 mx-auto mt-8 md:py-3;
-  background-color: var(--text-color);
-  color: var(--bg-color);
+  background-color: var(--text-color-light);
+  color: var(--bg-color-dark);
 }
