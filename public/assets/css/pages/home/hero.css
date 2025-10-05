@@ -21,34 +21,6 @@
   opacity: 1;
 }
 
-/* Contact Links - Start */
-#contact-links {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 75px;
-}
-
-.contact-link {
-  height: 2rem;
-  width: 2rem;
-  opacity: 0;
-}
-
-.contact-link:focus {
-  outline: none;
-}
-
-.contact-link:hover {
-  transition: transform 0.2s ease-in-out;
-  transform: scale(1.2) rotate(15deg);
-}
-
-.contact-link svg {
-  pointer-events: none;
-}
-/* Contact Links - End */
-
 @media only screen and (min-width: 999.9px) {
   /* Home Page - Hero Section Start */
 
@@ -61,11 +33,4 @@
     min-width: 1000px;
   }
   /* Home Page - Hero Section End */
-}
-
-@media only screen and (min-width: 1080px) {
-  .contact-link {
-    height: 2.7rem;
-    width: 2.7rem;
-  }
 }
