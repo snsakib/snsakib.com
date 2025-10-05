@@ -8,7 +8,7 @@
 }
 
 .course {
-  border: 1px solid var(--text-color-light);
+  border: 1px solid var(--text-color-dark);
   border-radius: 5px;
   overflow: hidden;
   @apply flex flex-col justify-between w-full max-w-96 my-5;
@@ -37,9 +37,9 @@
 }
 
 .course-tech-item {
+  background-color: #b7c5e1;
   border-radius: 5px;
   padding: 0px 10px;
-  background-color: var(--text-color-light);
 }
 
 .course-tech-item-logo {
@@ -51,12 +51,14 @@
 
 .course-link {
   @apply block w-full text-lg md:text-xl font-bold text-center px-5 py-2 mx-auto mt-8 md:py-3;
-  border-top: 1px solid var(--text-color-light);
-  transition: all 0.3s ease-in-out;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e);
+  color: var(--text-color-dark);
+  /* border-top: 1px solid var(--text-color-dark); */
+  transition: all 0.5s ease-in-out;
 }
 
 .course-link:hover {
-  @apply block text-lg md:text-xl font-bold text-center px-5 py-2 mx-auto mt-8 md:py-3;
-  background-color: var(--text-color-light);
-  color: var(--bg-color-dark);
+  /* @apply block text-lg md:text-xl font-bold text-center px-5 py-2 mx-auto mt-8 md:py-3; */
+  /* background: var(--bg-color-dark); */
+  background: linear-gradient(45deg, #ee7752, #e73c7e);
 }

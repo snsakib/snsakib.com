@@ -133,17 +133,14 @@
 
 .description-link {
   @apply block text-sm md:text-lg font-bold text-center px-5 py-2 mx-auto md:w-1/2;
-  color: var(--text-color-light);
-  background: transparent;
-  border: 1px solid var(--text-color-light);
+  color: var(--text-color-dark);
+  background: linear-gradient(-45deg, #ee7752, #e73c7e);
   border-radius: 5px;
   transition: all 0.3s ease-in-out;
 }
 
 .description-link:hover {
-  color: var(--text-color-dark);
-  background: linear-gradient(-45deg, #ee7752, #e73c7e);
-  border: 1px solid transparent;
+  background: linear-gradient(45deg, #ee7752, #e73c7e);
   border-radius: 5px;
 }
 
