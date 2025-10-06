@@ -3,6 +3,7 @@ import { portico  } from "@/app/fonts-loader";
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { TextPlugin } from "gsap/TextPlugin";
+import ContactLinks from "@/components/ui/contactLinks";
 
 gsap.registerPlugin(TextPlugin) 
 
@@ -28,6 +29,9 @@ export default function HomeHero() {
         <p className={ portico.className + " text-2xl md:text-3xl xl:text-5xl"}>Hi, I'm</p>
         <img id="home-hero-img" src="/assets/img/home-hero-name.svg" />
         <p className={"text-xl md:text-2xl xl:text-4xl"}>Helping businesses with <span id="home-hero-service" className="text-gradient-1 block md:inline">Web Development</span> solutions</p>
+        <div className="w-full md:w-1/6 mt-10">
+          <ContactLinks/>
+        </div>
       </div>
     </section>
   );
