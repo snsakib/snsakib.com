@@ -1,9 +1,10 @@
 :root {
-  --white: #e4edf4;
-  --orange: #da5730;
+  --bg-color-dark: #0b0c14;
+  --bg-color-light: #D8DBE2;
+  --text-color-dark: #0b0c14;
+  --text-color-light: #D8DBE2;
+  --blue: #48639C;
   --black: #181819;
-  --deep-blue: #0b0c14;
-  --section-bg-color: var(--deep-blue);
 }
 
 * {
@@ -11,7 +12,8 @@
 }
 
 body {
-  background-color: var(--white);
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-light);
 }
 
 @media (prefers-color-scheme: dark) {

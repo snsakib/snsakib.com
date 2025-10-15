@@ -14,5 +14,6 @@
 @import url("../public/assets/css/pages/home/home.css");
 
 /* UI CSS */
+@import url("../public/assets/css/ui/contact-links.css");
 @import url("../public/assets/css/ui/carousel.css");
 @import url("../public/assets/css/ui/misc.css");

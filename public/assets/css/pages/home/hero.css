@@ -1,72 +1,30 @@
 .hero-wrapper {
-  position: relative;
-  background: var(--section-bg-color);
+  @apply flex flex-col md:flex-row justify-center items-center gap-10 py-20 md:py-0 md:min-h-screen;
+}
+
+#home-hero-logo {
+  @apply max-[420px]:w-2/3 min-[421px]:w-1/2 sm:w-1/3 md:w-1/2 md:max-w-[320px] md:order-2;
 }
 
 #home-hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 25px;
-  min-height: 70vh;
+  align-items: start;
+  @apply gap-5;
 }
 
-#home-hero-img {
-  width: 400px;
-  opacity: 0;
+#home-hero-name {
+  opacity: 1;
+  @apply max-[420px]:w-full md:w-full;
 }
 
 #home-hero-title {
-  color: var(--white);
-  opacity: 0;
+  color: var(--text-color-light);
+  opacity: 1;
+  @apply text-xl md:text-xl;
 }
 
-/* Contact Links - Start */
-#contact-links {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 75px;
-}
-
-.contact-link {
-  height: 2rem;
-  width: 2rem;
-  opacity: 0;
-}
-
-.contact-link:focus {
-  outline: none;
-}
-
-.contact-link:hover {
-  transition: transform 0.2s ease-in-out;
-  transform: scale(1.2) rotate(15deg);
-}
-
-.contact-link svg {
-  pointer-events: none;
-}
-/* Contact Links - End */
-
-@media only screen and (min-width: 999.9px) {
-  /* Home Page - Hero Section Start */
-
-  #home-hero {
-    gap: 50px;
-    min-height: 90vh;
-  }
-
-  #home-hero-img {
-    min-width: 1000px;
-  }
-  /* Home Page - Hero Section End */
-}
-
-@media only screen and (min-width: 1080px) {
-  .contact-link {
-    height: 2.7rem;
-    width: 2.7rem;
-  }
+#home-hero-contacts-wrapper {
+  @apply w-2/3 sm:w-1/3 md:w-1/6 mt-10 md:mt-5;
 }

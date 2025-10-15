@@ -3,5 +3,5 @@
 }
 
 .section-heading {
-  @apply text-3xl md:text-4xl lg:text-5xl lg:leading-normal tracking-wide;
+  @apply text-3xl lg:text-4xl lg:leading-normal tracking-wide;
 }

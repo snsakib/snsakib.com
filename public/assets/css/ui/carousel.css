@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  @apply h-52 md:h-80;
+  @apply h-44 md:h-80;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
@@ -57,13 +57,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  @apply h-56;
+  @apply h-60 md:h-52;
   position: relative;
   overflow: hidden;
   @apply mx-auto;
 }
 
 .gallery-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   left: 50%;
   opacity: 0;
   height: 100%;
@@ -93,8 +96,7 @@
 }
 
 .description-title {
-  @apply text-center font-bold text-base md:text-2xl;
-  color: var(--orange);
+  @apply text-center font-bold text-xl;
 }
 
 .description-text {
@@ -106,14 +108,19 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  @apply my-3;
+  gap: 10px;
+  @apply mt-5;
 }
 
 .tech-item {
+  background-color: #0c1733;
   display: flex;
   justify-content: center;
   align-items: center;
-  @apply px-2 md:px-4;
+  width: 125px;
+  height: 35px;
+  padding: 10px 20px;
+  border-radius: 5px;
 }
 
 .tech-item-logo {
@@ -123,21 +130,20 @@
 
 .tech-item-text {
   display: block;
-  @apply text-sm md:text-base font-bold;
+  @apply text-sm font-bold;
 }
 
 .description-link {
-  @apply block text-sm md:text-lg font-bold text-center px-5 py-1 mx-auto md:py-2 md:w-1/2;
-  color: var(--orange);
-  border: 1px solid var(--orange);
-  border-radius: 3px;
+  @apply block text-base font-bold text-center px-5 py-2 mx-auto w-3/4 md:w-1/2;
+  color: var(--text-color-dark);
+  background: linear-gradient(-45deg, #ee7752, #e73c7e);
+  border-radius: 5px;
   transition: all 0.3s ease-in-out;
 }
 
 .description-link:hover {
-  color: var(--black);
-  border: 1px solid var(--orange);
-  background-color: var(--orange);
+  background: linear-gradient(45deg, #ee7752, #e73c7e);
+  border-radius: 5px;
 }
 
 /* Gallery Descriptions - End */
@@ -145,10 +151,11 @@
 .gallery-controls {
   display: flex;
   justify-content: center;
+  @apply mt-5;
 }
 
 .gallery-controls button {
-  color: var(--orange);
+  color: var(--text-color-light);
   background-color: transparent;
   border: 2px solid transparent;
   border-radius: 50%;
@@ -159,7 +166,8 @@
 }
 
 .gallery-controls button:hover {
-  border: 2px solid var(--orange);
+  color: #e73c7e;
+  border: 2px solid #ee7752;
 }
 
 .gallery-controls button:focus {

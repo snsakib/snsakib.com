@@ -134,38 +134,40 @@ export default function ProjectCarousel() {
           className="gallery-description gallery-description-1"
           ref={descriptionOne}
         >
-          <h3 className="description-title">RobiShop</h3>
-          <p className="description-text">
-            An e-commerce platform for the{" "}
-            <span className="font-bold">Robi Axiata Limited, Bangladesh</span>.
-          </p>
-          <div className="description-tech">
-            <div className="tech-item">
-              <img
-                className="tech-item-logo"
-                src="/assets/img/tech-logos/node-logo.svg"
-                width="20px"
-                height="20px"
-              />
-              <span className="tech-item-text text-lime-500">Node</span>
-            </div>
-            <div className="tech-item">
-              <img
-                className="tech-item-logo"
-                src="/assets/img/tech-logos/mysql-logo.svg"
-                width="50px"
-                height="20px"
-              />
-              <span className="tech-item-text text-sky-600">MySQL</span>
-            </div>
-            <div className="tech-item">
-              <img
-                className="tech-item-logo"
-                src="/assets/img/tech-logos/vue-logo.svg"
-                width="20px"
-                height="20px"
-              />
-              <span className="tech-item-text text-emerald-500">Vue</span>
+          <div>
+            <h3 className="description-title text-gradient-2">RobiShop</h3>
+            <p className="description-text">
+              An e-commerce platform for the{" "}
+              <span className="font-bold">Robi Axiata Limited, Bangladesh</span>
+            </p>
+            <div className="description-tech">
+              <div className="tech-item">
+                <img
+                  className="tech-item-logo"
+                  src="/assets/img/tech-logos/node-logo.svg"
+                  width="20px"
+                  height="20px"
+                />
+                <span className="tech-item-text text-emerald-500">Node</span>
+              </div>
+              <div className="tech-item">
+                <img
+                  className="tech-item-logo"
+                  src="/assets/img/tech-logos/mysql-logo.svg"
+                  width="50px"
+                  height="20px"
+                />
+                <span className="tech-item-text text-sky-600">MySQL</span>
+              </div>
+              <div className="tech-item">
+                <img
+                  className="tech-item-logo"
+                  src="/assets/img/tech-logos/vue-logo.svg"
+                  width="20px"
+                  height="20px"
+                />
+                <span className="tech-item-text text-emerald-500">Vue</span>
+              </div>
             </div>
           </div>
           <a
@@ -181,53 +183,51 @@ export default function ProjectCarousel() {
           className="gallery-description gallery-description-2"
           ref={descriptionTwo}
         >
-          <h3 className="description-title">World Bank & SME Foundation</h3>
-          <p className="description-text">
-            A joint initiative of the{" "}
-            <span className="font-bold">World Bank</span> and{" "}
-            <span className="font-bold">SME Foundation Bangladesh</span>. It
-            provides female entrepreneurs a marketplace to sell their products
-            to the global consumers.
-          </p>
-          <div className="description-tech">
-            <div className="tech-item w-1/2 md:w-auto">
-              <img
-                className="tech-item-logo"
-                src="/assets/img/tech-logos/laravel-logo.svg"
-                width="20px"
-                height="20px"
-              />
-              <span className="tech-item-text text-red-600">Laravel</span>
-            </div>
+          <div>
+            <h3 className="description-title text-gradient-2">World Bank & SME Foundation</h3>
+            <p className="description-text">
+              A marketplace for female entrepreneurs to sell their products to the global consumers
+            </p>
+            <div className="description-tech">
+              <div className="tech-item">
+                <img
+                  className="tech-item-logo"
+                  src="/assets/img/tech-logos/laravel-logo.svg"
+                  width="20px"
+                  height="20px"
+                />
+                <span className="tech-item-text text-red-600">Laravel</span>
+              </div>
 
-            <div className="tech-item w-1/2 md:w-auto">
-              <img
-                className="tech-item-logo"
-                src="/assets/img/tech-logos/node-logo.svg"
-                width="20px"
-                height="20px"
-              />
-              <span className="tech-item-text text-lime-500">Node</span>
-            </div>
+              <div className="tech-item">
+                <img
+                  className="tech-item-logo"
+                  src="/assets/img/tech-logos/node-logo.svg"
+                  width="20px"
+                  height="20px"
+                />
+                <span className="tech-item-text text-emerald-500">Node</span>
+              </div>
 
-            <div className="tech-item w-1/2 md:w-auto">
-              <img
-                className="tech-item-logo"
-                src="/assets/img/tech-logos/mysql-logo.svg"
-                width="50px"
-                height="20px"
-              />
-              <span className="tech-item-text text-sky-600">MySQL</span>
-            </div>
+              <div className="tech-item">
+                <img
+                  className="tech-item-logo"
+                  src="/assets/img/tech-logos/mysql-logo.svg"
+                  width="50px"
+                  height="20px"
+                />
+                <span className="tech-item-text text-sky-600">MySQL</span>
+              </div>
 
-            <div className="tech-item w-1/2 md:w-auto">
-              <img
-                className="tech-item-logo"
-                src="/assets/img/tech-logos/vue-logo.svg"
-                width="20px"
-                height="20px"
-              />
-              <span className="tech-item-text text-emerald-500">Vue</span>
+              <div className="tech-item">
+                <img
+                  className="tech-item-logo"
+                  src="/assets/img/tech-logos/vue-logo.svg"
+                  width="20px"
+                  height="20px"
+                />
+                <span className="tech-item-text text-emerald-500">Vue</span>
+              </div>
             </div>
           </div>
           <a
@@ -243,29 +243,31 @@ export default function ProjectCarousel() {
           className="gallery-description gallery-description-3"
           ref={descriptionThree}
         >
-          <h3 className="description-title">Polar Ice Cream</h3>
-          <p className="description-text">
-            An e-commerce platform for the{" "}
-            <span className="font-bold">Polar Ice Cream, Bangladesh</span>.
-          </p>
-          <div className="description-tech">
-            <div className="tech-item">
-              <img
-                className="tech-item-logo"
-                src="/assets/img/tech-logos/wordpress-logo.svg"
-                width="25px"
-                height="20px"
-              />
-              <span className="tech-item-text text-sky-600">WordPress</span>
-            </div>
-            <div className="tech-item">
-              <img
-                className="tech-item-logo"
-                src="/assets/img/tech-logos/mysql-logo.svg"
-                width="50px"
-                height="20px"
-              />
-              <span className="tech-item-text text-sky-600">MySQL</span>
+          <div>
+            <h3 className="description-title text-gradient-2">Polar Ice Cream</h3>
+            <p className="description-text">
+              An e-commerce platform for the{" "}
+              <span className="font-bold">Polar Ice Cream, Bangladesh</span>
+            </p>
+            <div className="description-tech">
+              <div className="tech-item">
+                <img
+                  className="tech-item-logo"
+                  src="/assets/img/tech-logos/wordpress-logo.svg"
+                  width="25px"
+                  height="20px"
+                />
+                <span className="tech-item-text text-sky-600">WordPress</span>
+              </div>
+              <div className="tech-item">
+                <img
+                  className="tech-item-logo"
+                  src="/assets/img/tech-logos/mysql-logo.svg"
+                  width="50px"
+                  height="20px"
+                />
+                <span className="tech-item-text text-sky-600">MySQL</span>
+              </div>
             </div>
           </div>
           <a

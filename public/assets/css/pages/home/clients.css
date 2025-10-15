@@ -1,39 +1,89 @@
 #clients-wrapper {
   position: relative;
+  background-color: var(--section-bg);
 }
 
 #home-clients {
+  background-color: var(--bg-color-light);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  @apply pt-10 pb-20;
-}
-
-.fade-right {
-  @apply opacity-0;
+  @apply pt-5 pb-10;
 }
 
 .client-logos {
-  @apply w-full lg:w-1/2 grid grid-cols-4 justify-items-center items-center gap-5 md:gap-x-20 md:gap-y-10 lg:gap-x-5 lg:gap-y-10 xl:gap-10;
-}
-
-.client-logos a {
-  opacity: 0;
   position: relative;
-  display: block;
+  overflow: hidden;
   @apply w-full;
-  @apply h-20 md:h-20 lg:h-32;
 }
 
-.client-logos a img {
+.scrolling-logos {
+  display: flex;
+  width: fit-content;
+  flex: auto;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.client-logo {
+  /* border: 1px solid var(--text-color-dark); */
+  border-radius: 5px;
+  width: 200px;
+  height: 80px;
+}
+
+.client-logo a {
+  display: block;
   width: 100%;
   height: 100%;
 }
 
+.client-logo img {
+  padding: 10px;
+}
 
-@media only screen and (min-width: 1024px) {
-  #home-clients {
-    flex-direction: row;
+.client-logo-gcf,
+.client-logo-pksf {
+  height: 100px;
+}
+
+.client-logo-polar {
+  width: 180px;
+  height: 100px;
+}
+
+.client-logo-dpd {
+  width: 300px;
+}
+
+@media screen and (min-width: 768px) {
+  .scrolling-logos {
+    gap: 100px;
   }
+  
+  .client-logo {
+    width: 220px;
+    height: 100px;
+  }
+
+  .client-logo-wb,
+  .client-logo-cwl {
+    width: 300px;
+  }
+
+  .client-logo-gcf,
+  .client-logo-pksf {
+    height: 130px;
+  }
+
+  .client-logo-polar {
+    width: 200px;
+    height: 150px;
+  }
+
+  .client-logo-dpd {
+    width: 350px;
+  }
+  
 }
