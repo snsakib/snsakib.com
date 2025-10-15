@@ -9,7 +9,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  @apply pt-5 pb-10 md:pt-10 md:pb-20;
+  @apply pt-5 pb-10;
 }
 
 .client-logos {
@@ -53,6 +53,10 @@
   height: 100px;
 }
 
+.client-logo-dpd {
+  width: 300px;
+}
+
 @media screen and (min-width: 768px) {
   .scrolling-logos {
     gap: 100px;
@@ -76,6 +80,10 @@
   .client-logo-polar {
     width: 200px;
     height: 150px;
+  }
+
+  .client-logo-dpd {
+    width: 350px;
   }
   
 }

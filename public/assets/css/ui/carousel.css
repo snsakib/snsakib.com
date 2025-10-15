@@ -96,7 +96,7 @@
 }
 
 .description-title {
-  @apply text-center font-bold text-base md:text-2xl;
+  @apply text-center font-bold text-xl;
 }
 
 .description-text {
@@ -134,7 +134,7 @@
 }
 
 .description-link {
-  @apply block text-sm md:text-lg font-bold text-center px-5 py-2 mx-auto w-3/4 md:w-1/2;
+  @apply block text-base font-bold text-center px-5 py-2 mx-auto w-3/4 md:w-1/2;
   color: var(--text-color-dark);
   background: linear-gradient(-45deg, #ee7752, #e73c7e);
   border-radius: 5px;
@@ -151,7 +151,7 @@
 .gallery-controls {
   display: flex;
   justify-content: center;
-  @apply mt-2 md:mt-5;
+  @apply mt-5;
 }
 
 .gallery-controls button {

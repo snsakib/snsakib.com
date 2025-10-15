@@ -120,6 +120,20 @@ export default function HomeClients() {
               </a>
             </div>
 
+            <div className="client-logo client-logo-dpd">
+              <a
+                href="https://deedpolldepartment.co.uk/"
+                target="_blank"
+                title="Deed Poll Department"
+              >
+                <Image
+                  src="/assets/img/dpd-logo.svg"
+                  alt="Deed Poll Department logo"
+                  fill
+                />
+              </a>
+            </div>
+
             <div className="client-logo">
               <a
                 href="http://wsmesuppliersplatform.smef.gov.bd/"

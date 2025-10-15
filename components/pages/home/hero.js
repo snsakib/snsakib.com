@@ -25,11 +25,14 @@ export default function HomeHero() {
 
   return (
     <section className="hero-wrapper">
+      <div id="home-hero-logo">
+        <img id="home-hero-logo-img" src="/assets/img/home-hero-logo.png"/>
+      </div>
       <div id="home-hero" className="page-section">
-        <p className={ portico.className + " text-2xl md:text-3xl xl:text-5xl"}>Hi, I'm</p>
-        <img id="home-hero-img" src="/assets/img/home-hero-name.svg" />
-        <p className={"text-xl md:text-2xl xl:text-4xl"}>Helping businesses with <span id="home-hero-service" className="text-gradient-1 block md:inline">Web Development</span> solutions</p>
-        <div className="w-full md:w-1/6 mt-10">
+        <p className={ portico.className + " text-2xl md:text-3xl"}>Hi, I'm</p>
+        <img id="home-hero-name" src="/assets/img/home-hero-name.svg" />
+        <p id="home-hero-title">Helping businesses with <span id="home-hero-service" className="text-gradient-1 block">Web Development</span> solutions</p>
+        <div id="home-hero-contacts-wrapper">
           <ContactLinks/>
         </div>
       </div>
